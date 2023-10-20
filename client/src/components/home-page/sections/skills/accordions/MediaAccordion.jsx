@@ -21,7 +21,6 @@ export default function MediaAccordion({ active, handleClick }) {
           <div className="skills__program">Ableton</div>
           <div className="skills__program">Pro Tools</div>
           <div className="skills__program">Logic Pro</div>
-          <div className="skills__program">FL Studio</div>
           <div className="skills__program">VST Plugins</div>
           <div className="skills__program">Kontakt</div>
           <div className="skills__program">Adobe Creative Suite</div>
@@ -29,6 +28,7 @@ export default function MediaAccordion({ active, handleClick }) {
           <div className="skills__program">Illustrator</div>
           <div className="skills__program">Premiere Pro</div>
           <div className="skills__program">Davinci Resolve</div>
+          <div className="skills__program">After Effects</div>
           <div className="skills__program">Wordpress</div>
         </div>
         
@@ -38,6 +38,9 @@ export default function MediaAccordion({ active, handleClick }) {
           <div className="skills__skill">Mixing</div>
           <div className="skills__skill">Mastering</div>
           <div className="skills__skill">Sound Engineering</div>
+          <div className="skills__skill">Sound Design</div>
+          <div className="skills__skill">Audio Editing</div>
+          <div className="skills__skill"></div>         
           <div className="skills__skill">Podcast Production & Editing</div>
           <div className="skills__skill">Audiobook Editing</div>
           <div className="skills__skill">Live Audio</div>
