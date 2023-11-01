@@ -40,24 +40,27 @@ export default function MediaAccordion({ active, handleClick }) {
           <div className="skills__skill">Sound Engineering</div>
           <div className="skills__skill">Sound Design</div>
           <div className="skills__skill">Audio Editing</div>
-          <div className="skills__skill"></div>         
+          <div className="skills__skill">Patching & Routing</div>
+          <div className="skills__skill">Cable Management</div>                
           <div className="skills__skill">Podcast Production & Editing</div>
           <div className="skills__skill">Audiobook Editing</div>
           <div className="skills__skill">Live Audio</div>
           <div className="skills__skill">Field Recording</div>
           <div className="skills__skill">Sound Treatment</div>
-          <div className="skills__skill">Amplification</div>
+          <div className="skills__skill">Effects & Amplification</div>
           <div className="skills__skill">Microphone Selection & Technique</div>
+          <div className="skills__skill">Equipment Care & Maintenance</div>         
+          <div className="skills__skill">Vocal Coaching</div>         
+          <div className="skills__skill">Voiceover</div>
         </div>
 
         <h4 className="skills__content-subtitle">Film & Video Production</h4>
         <div className="skills">
-          <div className="skills__skill">Videography</div>
+          <div className="skills__skill">Videography & Cinematography</div>
           <div className="skills__skill">Video Editing</div>
           <div className="skills__skill">Color Correction</div>
           <div className="skills__skill">Film Audio & ADR</div>
           <div className="skills__skill">Scripting & Storyboarding</div>
-          <div className="skills__skill">Cinematography</div>
           <div className="skills__skill">Motion Graphics</div>
           <div className="skills__skill">Directing</div>
           <div className="skills__skill">Lighting</div>

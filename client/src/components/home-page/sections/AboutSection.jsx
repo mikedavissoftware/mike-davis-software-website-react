@@ -40,7 +40,11 @@ export default function AboutSection() {
           </p>
           <br/>
           <p className="heading-sec__sub">
-            After earning my software engineering certificate in February of 2023, I immediately got started on freelance work by reaching out to my network to see if anyone needed a custom website developed. From my previous technical work with Daggett Control, it seemed natural for me to develop their new company website. This project was extremely valuable in reinforcing what I learned in the program, for both front end and back end web development. Please see <a href="#projects">My Projects</a> below for more details on Daggett Control and other projects. I have established & nurtured my passion for software development, and look forward to contributing my technical & interpersonal skills to this ever-evolving field!
+            After earning my software engineering certificate in February of 2023, I immediately sought out freelance work opportunities within my network to reinforce what I had learned. Through my network, I secured my first freelance development contract with a company called Daggett Control Company. From my previous technical work with Daggett Control on things like domains & email system management, it seemed natural for me to use my new skills to develop their new company website. This project was extremely valuable in reinforcing & augmenting what I learned in the program, for both front end & back end web development. Please see <a href="#projects">My Projects</a> below for more details on Daggett Control and my other highlighted projects.
+          </p>
+          <br/>
+          <p className="heading-sec__sub">
+            I continue to nurture my passion for software development, and I look forward to contributing my technical & interpersonal skills to this ever-evolving field!
           </p>
           <hr className="secondary"/>
           <p className="heading-sec__sub">
