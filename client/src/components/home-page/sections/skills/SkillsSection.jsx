@@ -4,6 +4,8 @@ import SoftwareAccordion from "./accordions/SoftwareAccordion"
 import MediaAccordion from "./accordions/MediaAccordion"
 import EntrepreneurshipAccordion from "./accordions/EntrepreneurshipAccordion"
 import MusicAccordion from "./accordions/MusicAccordion"
+import FoodAndHospitalityAccordion from "./accordions/FoodAndHospitalityAccordion"
+
 
 export default function SkillsSection() {
 
@@ -27,6 +29,7 @@ export default function SkillsSection() {
           <MediaAccordion active={active} handleClick={handleClick} />
           <EntrepreneurshipAccordion active={active} handleClick={handleClick} />
           <MusicAccordion active={active} handleClick={handleClick} />
+          <FoodAndHospitalityAccordion active={active} handleClick={handleClick} />
 
           <br/>
           <em>lyricism, musical composition & arrangement, live & studio performance, marketing & promotion, sales, merchandising, budgeting, business & project management, communications, team-building, and conflict resolution</em>

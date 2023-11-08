@@ -17,11 +17,10 @@ export default function EntrepreneurshipAccordion({ active, handleClick }) {
 
         <h4 className="skills__content-subtitle">Industries</h4>
         <div className="skills">
-          <div className="skills__program">Music Industry</div>
+          <div className="skills__program">Music & Entertainment</div>
           <div className="skills__program">501(c)(3) Nonprofit Organizations</div>
           <div className="skills__program">Freelance Media Production</div>
-          <div className="skills__program">Independent Film Industry</div>
-          <div className="skills__program">Live Event Production</div>
+          <div className="skills__program">Independent Film</div>
         </div>
 
         <h4 className="skills__content-subtitle">Music Industry</h4>

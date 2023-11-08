@@ -71,13 +71,19 @@ export default function MediaAccordion({ active, handleClick }) {
         <h4 className="skills__content-subtitle">Graphic Design</h4>
         <div className="skills">
           <div className="skills__skill">Logo Design</div>
-          <div className="skills__skill">Poster Design</div>
+          <div className="skills__skill">Event Poster Design</div>
+          <div className="skills__skill">Business Card Design</div>
+          <div className="skills__skill">Merchandise Design</div>
           <div className="skills__skill">Social Media Graphics</div>
           <div className="skills__skill">Photo Editing</div>
-          <div className="skills__skill">Digitization</div>
           <div className="skills__skill">Image Blending</div>
+          <div className="skills__skill">Effects & Filtering</div>
+          <div className="skills__skill">Masking & Composition</div>
+          <div className="skills__skill">Digitization</div>
           <div className="skills__skill">Digital Illustration</div>
-          <div className="skills__skill">Masking & Composition</div>              
+          <div className="skills__skill">Font Creation</div>
+          <div className="skills__skill">Image Conversion</div>
+          <div className="skills__skill">Preparation for Print</div>
         </div>
         
       </div>
