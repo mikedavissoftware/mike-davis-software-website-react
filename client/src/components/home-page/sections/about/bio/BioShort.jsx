@@ -8,27 +8,23 @@ export default function BioShort() {
   return (
     <div>
       <p className="heading-sec__sub">
-        Ever since I was a kid, I've loved taking devices apart and putting them back together. That early interest in learning how systems work later evolved into assembling my first desktop computer at the age of 13, and subsequently taking four years of CAD-focused mechanical engineering classes throughout high school. I later pursued a mathematics-heavy major in ecological engineering at Colorado State University for two years, until switching to the broader science of restoration ecology. Despite switching my major, the remainder of my undergraduate curriculum was well-supported by what I learned in my engineering courses, and I graduated in 2016 with a BS in Restoration Ecology.
+        Since I was young, I have been a systems thinker, which led to an interest in building computers, engineering, & mathematics. I attended Colorado State University for my undergraduate degree in restoration ecology, the first two years being in engineering before I switched majors. Additionally, I have always been a self-starter, pursuing a diversity of independent ventures in freelancing, nonprofits, and the arts (music, film, and graphic design).
       </p>
       <br/>
       <p className="heading-sec__sub">
-        Throughout my schooling and beyond, I have always been a self-starter, pursuing a diversity of independent ventures in freelancing, nonprofits, and the arts (music, film, and graphic design).
+        After acquiring my undergraduate degree, I co-founded and served as drummer-producer for the independent prog-punk band <a href="https://linktr.ee/chessatbreakfast" target="_blank">Chess at Breakfast</a>. We achieved substantial success in the Fort Collins music scene, playing over 70 shows, performing 2 regional tours, and self-producing 3 albums. Building a successful & sustainable independent music business required my development of a diverse set of skills in music, audio, video, graphic design, event production, logistics, and business management. (See <a href="#skills">My Skills</a> below for a comprehensive list.)
       </p>
       <br/>
       <p className="heading-sec__sub">
-        During my career as a valued member of the Fort Collins music community, I co-founded and served as drummer-producer for the independent prog-punk band <a href="https://linktr.ee/chessatbreakfast" target="_blank">Chess at Breakfast</a>. Despite the local dominance of folk, bluegrass, americana, and guitar-driven jam music, my bandmates and I achieved substantial success in the Fort Collins scene. Over our five-year run (2016-2021), we played over 70 shows, successfully executed 2 regional tours, and self-produced & independently released 3 albums & frequent singles. Building a successful & sustainable independent music business required the development & reinforcent of many skills in music, audio, video, graphic design, event production, logistics, and business management. (See <a href="#skills">My Skills</a> below for a comprehensive list.)
+        For well over a decade, I've initiated & facilitated numerous cross-disciplinary art projects within my network of friends & collaborators, both locally and remotely. From producing & releasing a song written specifically to a piece of visual art, to heading the conceptualization & production of a dramatic short film, to planning & executing multiple livestreamed fundraising events, I have a strong background in sociotechnical project management.
       </p>
       <br/>
       <p className="heading-sec__sub">
-        However, my contributions to the art community expanded beyond music, though often stemming from it. For over a decade, I've facilitated numerous cross-disciplinary projects within my network of collaborators, both locally and remotely. From producing & releasing a song written specifically to a piece of visual art, to heading the conceptualization & production of a dramatic short film, to planning & executing multiple livestreamed fundraising events, I have a strong background in sociotechnical project management.
+        Additionally, my sociotechnical acumen has been bolstered by co-founding and currently serving as the Director of Media Production for educational 501(c)(3) Nonprofit Organization <a href="https://theechofilm.com/" target="_blank">The Echo</a>. My experience within this organization has overlapped heavily with my contributions to the art community, but with differing end goals. Guided by the organization's paramount objective of educating the public about animals, I've overseen the production of short-form documentaries, social media content, and most recently a new podcast called <a href="http://onewildpodcast.com/" target="_blank">One Wild World</a>.
       </p>
       <br/>
       <p className="heading-sec__sub">
-        In addition to my contributions to the art community, I also co-founded and currently serve as the Director of Media Production for educational 501(c)(3) Nonprofit Organization <a href="https://theechofilm.com/" target="_blank">The Echo</a>. My experience within this organization has involved many of the same duties & project management as those of running my band, but with different end goals. Guided by the organization's paramount objective of educating the public about animals, I've overseen the production of short-form documentaries, social media content, and most recently a podcast called <a href="http://onewildpodcast.com/" target="_blank">One Wild World</a>.
-      </p>
-      <br/>
-      <p className="heading-sec__sub">
-        Having spent over a decade pursuing a variety of independent ventures, I've cultivated a diverse & exceedingly valuable perspective on sociotechnical project management. This perspective allows me to operate with technical & conceptual confidence in the production of audio, film, visual art, and software solutions. In addition to refined technical skills, my time in creative entrepreneurship has culminated into a unique awareness of how human & digital systems can work together, both efficiently & efficaciously.
+        My unique experiences, impressive skill set, and broad perspective allow me to operate with technical & conceptual confidence in the production of audio, film, visual art, and software projects. Also, my time in creative entrepreneurship has culminated into a unique awareness of how human & digital systems can work together efficiently & efficaciously.
       </p>
       <br/>
       <p className="heading-sec__sub">
