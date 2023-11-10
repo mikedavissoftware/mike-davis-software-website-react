@@ -6,7 +6,7 @@ export default function BioLong() {
 
 
   return (
-    <div>
+    <div className="about__bio">
       <p className="heading-sec__sub">
         Ever since I was a kid, I've loved taking devices apart and putting them back together. That early interest in learning how systems work later evolved into assembling my first desktop computer at the age of 13, and subsequently taking four years of CAD-focused mechanical engineering classes throughout high school. I later pursued a mathematics-heavy major in ecological engineering at Colorado State University for two years, until switching to the broader science of restoration ecology. Despite switching my major, the remainder of my undergraduate curriculum was well-supported by what I learned in my engineering courses, and I graduated in 2016 with a BS in Restoration Ecology.
       </p>
