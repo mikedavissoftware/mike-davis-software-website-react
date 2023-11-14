@@ -10,7 +10,6 @@ export default function AboutSection() {
 
   function handleChange() {
     setBioShort(!bioShort)
-    console.log(bioShort)
   }
 
   return (
@@ -18,6 +17,12 @@ export default function AboutSection() {
       <div className="main-container">
         <h2 className="heading heading-sec heading-sec__mb-med">
           <span className="heading-sec__main">About Me</span>
+
+          <p className="heading-sec__sub">
+            <strong>AT MY CORE, I AM </strong>a creative, empathetic, & self-motivated systems-thinker with exceptional leadership & communication skills, a propensity to learn new from every experience, and a strong academic background in ecology, engineering, & mathematics. I bring an engineer's mindset to all of my independent & collaborative ventures in software, freelancing, nonprofits, media, and the arts.
+          </p>
+
+          {/* <hr className="secondary"/> */}
 
           <ul class="tg-list">
             <li class="tg-list-item">
@@ -35,7 +40,7 @@ export default function AboutSection() {
           
           <hr className="secondary"/>
           <p className="heading-sec__sub">
-            <em>If you're interested in collaborating or getting to know me better, don't hesitate to reach out. I am always happy to connect with someone new!</em>
+            <em>If you are interested in collaborating or getting to know me better, don't hesitate to reach out. I am always happy to connect with someone new!</em>
           </p>
           <a href="#contact" id="get-in-touch-btn" className="btn btn--med btn--theme btn--center dynamicBgClr">Get in Touch!</a>
         </h2>

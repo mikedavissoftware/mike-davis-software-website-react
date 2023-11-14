@@ -62,6 +62,8 @@ export default function MediaAccordion({ active, handleClick }) {
           <div className="skills__skill">Film Audio & ADR</div>
           <div className="skills__skill">Scripting & Storyboarding</div>
           <div className="skills__skill">Motion Graphics</div>
+          <div className="skills__skill">2D Animation</div>
+          <div className="skills__skill">Video Effects & Filtering</div>
           <div className="skills__skill">Directing</div>
           <div className="skills__skill">Lighting</div>
           <div className="skills__skill">Location Scouting</div>

@@ -193,7 +193,7 @@
 }
 
 .tg-list-item {
-	margin: 0rem 2rem 2rem 2rem;
+	margin: 2rem 2rem;
 }
 
 .tgl {
@@ -252,7 +252,9 @@
 		transition: all .2s ease;
 		font-family: sans-serif;
 		background: $themeClrPrimary;
+
 		&:after,
+
     &:before {
 			transform: skew(10deg);
 			display: inline-block;
@@ -263,7 +265,7 @@
 			line-height: 2em;
 			font-weight: bold;
 			color: #fff;
-			text-shadow: 0 1px 0 rgba(0,0,0,.4);
+			text-shadow: -1px 1px 0 rgba(0,0,0,.4);
 		}
     
 		&:after {
@@ -277,11 +279,15 @@
 		}
     
 		&:active {
-			background: $themeClrPrimary;
 			&:before {
 				left: -10%;
 			}
 		}
+
+    &:hover {
+      background: $themeClrPrimaryLight;
+      box-shadow: 4px 4px 8px #777;
+    }
 	}
   
 	&:checked + .tgl-btn {
@@ -297,6 +303,11 @@
 
     &:active:after {
       left: 10%;
+    }
+
+    &:hover {
+      background: $themeClrPrimaryLight;
+      box-shadow: 4px 4px 8px #777;
     }
 	}
 }
