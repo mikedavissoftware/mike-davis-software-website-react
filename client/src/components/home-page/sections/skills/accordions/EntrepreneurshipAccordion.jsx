@@ -1,7 +1,7 @@
 import { entrepreneurship } from "../../../../../db/skills"
 
-import SkillsSkill from "../SkillsSkill"
-import SkillsProgram from "../SkillsProgram"
+import SkillsSkill from "./skill-bubbles/SkillsSkill"
+import SkillsProgram from "./skill-bubbles/SkillsProgram"
 
 
 export default function EntrepreneurshipAccordion({ active, handleClick }) {
@@ -11,6 +11,18 @@ export default function EntrepreneurshipAccordion({ active, handleClick }) {
   })
 
   const musicAndEntertainmentComponents = entrepreneurship.musicAndEntertainment.map((skill) => {
+    return <SkillsSkill skill={skill} />
+  })
+
+  const nonprofitsComponents = entrepreneurship.nonprofits.map((skill) => {
+    return <SkillsSkill skill={skill} />
+  })
+
+  const freelanceMediaComponents = entrepreneurship.freelanceMedia.map((skill) => {
+    return <SkillsSkill skill={skill} />
+  })
+
+  const indieFilmComponents = entrepreneurship.indieFilm.map((skill) => {
     return <SkillsSkill skill={skill} />
   })
 
@@ -36,38 +48,17 @@ export default function EntrepreneurshipAccordion({ active, handleClick }) {
 
         <h4 className="skills__content-subtitle">501(c)(3) Nonprofit Organizations</h4>
         <div className="skills">
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>             
+          {nonprofitsComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Freelance Media Production</h4>
         <div className="skills">
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>             
+          {freelanceMediaComponents}  
         </div>
 
         <h4 className="skills__content-subtitle">Independent Film</h4>
         <div className="skills">
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>
-          <div className="skills__skill">Skill</div>             
+          {indieFilmComponents}         
         </div>
 
       </div>

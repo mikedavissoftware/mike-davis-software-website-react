@@ -1,7 +1,7 @@
 import { software } from "../../../../../db/skills"
 
-import SkillsSkill from "../SkillsSkill"
-import SkillsProgram from "../SkillsProgram"
+import SkillsSkill from "./skill-bubbles/SkillsSkill"
+import SkillsProgram from "./skill-bubbles/SkillsProgram"
 
 
 export default function SoftwareAccordion({ active, handleClick }) {

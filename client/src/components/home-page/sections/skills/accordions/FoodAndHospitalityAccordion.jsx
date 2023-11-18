@@ -1,9 +1,22 @@
+import { foodHospitality } from "../../../../../db/skills"
 
+import SkillsSkill from "./skill-bubbles/SkillsSkill"
+import SkillsProgram from "./skill-bubbles/SkillsProgram"
 
 
 export default function FoodAndHospitalityAccordion({ active, handleClick }) {
 
+  const employersComponents = foodHospitality.employers.map((employer) => {
+    return <SkillsProgram program={employer} />
+  })
 
+  const logisticsComponents = foodHospitality.logistics.map((skill) => {
+    return <SkillsSkill skill={skill} />
+  })
+
+  const foodBeverageComponents = foodHospitality.foodBeverage.map((skill) => {
+    return <SkillsSkill skill={skill} />
+  })
 
   return (
     <div>
@@ -15,31 +28,19 @@ export default function FoodAndHospitalityAccordion({ active, handleClick }) {
 
       <div className={`panel${(active === "food-and-hospitality") ? " active" : ""}`}>
 
+        <h4 className="skills__content-subtitle">Employers</h4>
+        <div className="skills">
+          {employersComponents}
+        </div>
+
         <h4 className="skills__content-subtitle">Logistics & Delivery</h4>
         <div className="skills">
-          <div className="skills__skill">COVID-19 Essential Worker Status</div>
-          <div className="skills__skill">Food & Beverage Delivery</div>
-          <div className="skills__skill">Food Safety</div>
-          <div className="skills__skill">Road Safety</div>
-          <div className="skills__skill">Mapping & Routing</div>
-          <div className="skills__skill">Customer Service</div>
-          <div className="skills__skill">Communications</div>
-          <div className="skills__skill">Vehicle & Equipment Maintenance</div>
+          {logisticsComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Food & Beverage</h4>
         <div className="skills">
-          <div className="skills__skill">Git</div>
-          <div className="skills__skill">Wordpress</div>
-          <div className="skills__skill">Node.js</div>
-          <div className="skills__skill">PostgreSQL</div>
-          <div className="skills__skill">SQLite3</div>
-          <div className="skills__skill">Rails Views</div>
-          <div className="skills__skill">Vite</div>
-          <div className="skills__skill">Create React App</div>
-          <div className="skills__skill">VS Code</div>
-          <div className="skills__skill">Postman</div>
-          <div className="skills__skill">Postman</div>              
+          {foodBeverageComponents}            
         </div>
 
       </div>

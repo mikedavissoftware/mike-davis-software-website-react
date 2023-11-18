@@ -9,7 +9,7 @@ import FoodAndHospitalityAccordion from "./accordions/FoodAndHospitalityAccordio
 
 export default function SkillsSection() {
 
-  const [active, setActive] = useState("")
+  const [active, setActive] = useState("software-engineering")
 
   const handleClick = (event) => {
     (event.target.id === active) ? (setActive("")) : (setActive(event.target.id));
@@ -30,9 +30,6 @@ export default function SkillsSection() {
           <EntrepreneurshipAccordion active={active} handleClick={handleClick} />
           <MusicAccordion active={active} handleClick={handleClick} />
           <FoodAndHospitalityAccordion active={active} handleClick={handleClick} />
-
-          <br/>
-          <em>lyricism, musical composition & arrangement, live & studio performance, marketing & promotion, sales, merchandising, budgeting, business & project management, communications, team-building, and conflict resolution</em>
         </div>
       </div>
     </section>
