@@ -19,7 +19,7 @@ export default function AboutSection() {
           <span className="heading-sec__main">About Me</span>
 
           <p className="heading-sec__sub">
-            <strong>AT MY CORE, I AM </strong>a creative, empathetic, & self-motivated systems-thinker with exceptional leadership & communication skills, a propensity to learn new from every experience, and a strong academic background in ecology, engineering, & mathematics. I bring an engineer's mindset to all of my independent & collaborative ventures in software, freelancing, nonprofits, media, and the arts.
+            <strong>AT MY CORE, I AM </strong>hard-working, resourceful, creative, empathetic, & self-motivated, with exceptional leadership & communication skills and a propensity to learn something new from every experience. With my academic background in ecology, engineering, & mathematics, I am a systems-thinker that brings an engineer's mindset to all of my independent & collaborative ventures in software, freelancing, nonprofits, media, and the arts.
           </p>
 
           {/* <hr className="secondary"/> */}

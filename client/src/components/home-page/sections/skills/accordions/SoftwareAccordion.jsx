@@ -1,8 +1,26 @@
+import { software } from "../../../../../db/skills"
 
+import SkillsSkill from "../SkillsSkill"
+import SkillsProgram from "../SkillsProgram"
 
 
 export default function SoftwareAccordion({ active, handleClick }) {
 
+  const languagesComponents = software.languages.map((language) => {
+    return <SkillsProgram program={language} />
+  })
+
+  const frameworksLibrarysPluginsComponents = software.frameworksLibrarysPlugins.map((skill) => {
+    return <SkillsSkill skill={skill} />
+  })
+
+  const platformsEnvironmentsOtherComponents = software.platformsEnvironmentsOther.map((skill) => {
+    return <SkillsSkill skill={skill} />
+  })
+  
+  const skillsPrinciplesComponents = software.skillsPrinciples.map((skill) => {
+    return <SkillsSkill skill={skill} />
+  })
 
   return (
     <div>
@@ -16,69 +34,22 @@ export default function SoftwareAccordion({ active, handleClick }) {
         
         <h4 className="skills__content-subtitle">Languages</h4>
         <div className="skills">
-          <div className="skills__program">HTML</div>
-          <div className="skills__program">CSS</div>
-          <div className="skills__program">JavaScript</div>
-          <div className="skills__program">Ruby</div>
-          {/* <div className="skills__program">SQL</div> */}
+          {languagesComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Frameworks, Libraries, & Plugins</h4>
         <div className="skills">
-          <div className="skills__skill">React</div>
-          <div className="skills__skill">Redux</div>
-          <div className="skills__skill">Ruby on Rails</div>
-          <div className="skills__skill">Rails ActiveAdmin</div>
-          <div className="skills__skill">SASS</div>
-          <div className="skills__skill">Tailwind CSS</div>
-          <div className="skills__skill">Daisy UI</div>
-          <div className="skills__skill">Semantic UI</div>
+          {frameworksLibrarysPluginsComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Platforms, Environments, & Other Tools</h4>
         <div className="skills">
-          <div className="skills__skill">Git</div>
-          <div className="skills__skill">Github</div>
-          <div className="skills__skill">Wordpress</div>
-          <div className="skills__skill">Render</div>
-          <div className="skills__skill">Netlify</div>
-          <div className="skills__skill">Microsoft Excel</div>              
-          <div className="skills__skill">Node.js</div>
-          <div className="skills__skill">NPM/NPX</div>
-          <div className="skills__skill">PostgreSQL</div>
-          <div className="skills__skill">SQLite3</div>
-          <div className="skills__skill">Rails Views</div>
-          <div className="skills__skill">Vite</div>
-          <div className="skills__skill">Create React App</div>
-          <div className="skills__skill">VS Code</div>
-          <div className="skills__skill">Postman</div>
-          {/* <div className="skills__skill">AWS</div> */}
+          {platformsEnvironmentsOtherComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Skills & Principles</h4>
         <div className="skills">
-          <div className="skills__skill">Front End</div>
-          <div className="skills__skill">Back End</div>
-          <div className="skills__skill">Full Stack</div>
-          <div className="skills__skill">Object-Oriented Programming</div>
-          <div className="skills__skill">Web Development</div>
-          <div className="skills__skill">Web & UI Design</div>
-          <div className="skills__skill">CRUD</div>
-          <div className="skills__skill">Custom API's</div>
-          <div className="skills__skill">RESTful Routing</div>
-          <div className="skills__skill">Version Control</div>
-          <div className="skills__skill">Branch Management</div>
-          <div className="skills__skill">Clean Code</div>
-          <div className="skills__skill">Refactoring & Optimization</div>
-          <div className="skills__skill">Disks & Cloud Storage</div>
-          <div className="skills__skill">Authentication & Authorization</div>
-          <div className="skills__skill">OAuth</div>
-          <div className="skills__skill">Namespacing</div>
-          <div className="skills__skill">Scope</div>
-          <div className="skills__skill">Hooks</div>
-          <div className="skills__skill">Dynamic Rendering</div>
-          <div className="skills__skill">Data Validation</div>
-          <div className="skills__skill">Client-Side Routing</div>
+          {skillsPrinciplesComponents}
         </div>
       </div>
     </div>
