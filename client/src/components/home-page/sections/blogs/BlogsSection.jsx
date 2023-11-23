@@ -22,7 +22,7 @@ export default function BlogsSection() {
   })
 
   return (
-    <section id="skills" className="skills sec-pad">
+    <section id="blogs" className="skills sec-pad">
       <div className="main-container">
         <h2 className="heading heading-sec heading-sec__mb-med">
           <span className="heading-sec__main">Blogs</span>
