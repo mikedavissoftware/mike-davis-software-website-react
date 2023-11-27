@@ -3,15 +3,15 @@
 @import 'abstracts/mixins';
 @import 'abstracts/typography';
 
-@import 'components/header';
-
-
-// Base CSS and Utilities
+// Base CSS
 @import 'base/base';
-@import 'abstracts/utilities';
 
 // Pages & Components
+@import 'components/header';
 @import 'components/footer';
 @import 'components/mouse-scroll';
 @import 'components/home';
 @import 'components/project-case-study';
+
+// Utilities
+@import 'abstracts/utilities';
