@@ -30,25 +30,25 @@ export default function SoftwareAccordion({ active, handleClick }) {
         onClick={handleClick}
       >Software Engineering</button>
 
-      <div className={`panel${(active === "software-engineering") ? " active" : ""}`}>
+      <div className={`skills__content-panel${(active === "software-engineering") ? "-active" : ""}`}>
         
         <h4 className="skills__content-subtitle">Languages</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {languagesComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Frameworks, Libraries, & Plugins</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {frameworksLibrarysPluginsComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Platforms, Environments, & Other Tools</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {platformsEnvironmentsOtherComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Skills & Principles</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {skillsPrinciplesComponents}
         </div>
       </div>

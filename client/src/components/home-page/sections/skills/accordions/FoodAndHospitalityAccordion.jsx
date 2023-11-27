@@ -26,20 +26,20 @@ export default function FoodAndHospitalityAccordion({ active, handleClick }) {
         onClick={handleClick}
       >Food, Hospitality, & Logistics</button>
 
-      <div className={`panel${(active === "food-and-hospitality") ? " active" : ""}`}>
+      <div className={`skills__content-panel${(active === "food-and-hospitality") ? "-active" : ""}`}>
 
         <h4 className="skills__content-subtitle">Employers</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {employersComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Logistics & Delivery</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {logisticsComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Food & Beverage</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {foodBeverageComponents}            
         </div>
 

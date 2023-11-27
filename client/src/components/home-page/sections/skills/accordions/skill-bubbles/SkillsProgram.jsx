@@ -6,6 +6,6 @@ export default function SkillsProgram({ program }) {
 
 
   return (
-    <div className="skills__program">{program}</div>
+    <div className="skills__content-program">{program}</div>
   )
 }

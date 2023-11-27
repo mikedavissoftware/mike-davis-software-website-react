@@ -30,25 +30,25 @@ export default function MediaAccordion({ active, handleClick }) {
         onClick={handleClick}
       >Media Production</button>
 
-      <div className={`panel${(active === "media-production") ? " active" : ""}`}>
+      <div className={`skills__content-panel${(active === "media-production") ? "-active" : ""}`}>
 
         <h4 className="skills__content-subtitle">Software Programs</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {programsComponents}
         </div>
         
         <h4 className="skills__content-subtitle">Audio Production</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {audioProductionComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Film & Video Production</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {videoProductionComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Graphic Design</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {graphicDesignComponents}
         </div>
         

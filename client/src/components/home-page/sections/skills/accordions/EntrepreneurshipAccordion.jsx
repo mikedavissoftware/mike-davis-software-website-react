@@ -34,30 +34,30 @@ export default function EntrepreneurshipAccordion({ active, handleClick }) {
         onClick={handleClick}
       >Entrepreneurship & Business Development</button>
 
-      <div className={`panel${(active === "entrepreneurship-and-business") ? " active" : ""}`}>
+      <div className={`skills__content-panel${(active === "entrepreneurship-and-business") ? "-active" : ""}`}>
 
         <h4 className="skills__content-subtitle">Industries</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {industriesComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Music & Entertainment</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {musicAndEntertainmentComponents}
         </div>
 
         <h4 className="skills__content-subtitle">501(c)(3) Nonprofit Organizations</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {nonprofitsComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Freelance Media Production</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {freelanceMediaComponents}  
         </div>
 
         <h4 className="skills__content-subtitle">Independent Film</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {indieFilmComponents}         
         </div>
 

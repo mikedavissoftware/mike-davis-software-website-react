@@ -26,20 +26,20 @@ export default function MusicAccordion({ active, handleClick }) {
         onClick={handleClick}
       >Music Composition & Performance</button>
 
-      <div className={`panel${(active === "music-composition-and-performance") ? " active" : ""}`}>
+      <div className={`skills__content-panel${(active === "music-composition-and-performance") ? "-active" : ""}`}>
 
         <h4 className="skills__content-subtitle">Instruments</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {instrumentsComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Music Composition & Songwriting</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {compositionSongwritingComponents}
         </div>
 
         <h4 className="skills__content-subtitle">Music Performance</h4>
-        <div className="skills">
+        <div className="skills__content-list">
           {musicPerformanceComponents}         
         </div>
 

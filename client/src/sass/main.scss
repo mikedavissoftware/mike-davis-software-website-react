@@ -1,15 +1,17 @@
+// Variables, Mixins, Typography
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/typography';
 
-@import 'base/base';
-
-@import 'pages/home';
-@import 'pages/project-case-study';
-
 @import 'components/header';
-@import 'components/footer';
-// @import 'components/skills';
-@import 'components/mouse-scroll';
 
+
+// Base CSS and Utilities
+@import 'base/base';
 @import 'abstracts/utilities';
+
+// Pages & Components
+@import 'components/footer';
+@import 'components/mouse-scroll';
+@import 'components/home';
+@import 'components/project-case-study';
