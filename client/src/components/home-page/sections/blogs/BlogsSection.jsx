@@ -12,9 +12,10 @@ export default function BlogsSection() {
     .then(r => r.json())
     .then(articlesData => {
       // console.log(articlesData)
-      setBlogsData(articlesData)
+      setBlogsData(articlesData.slice(0,3))
     })
   }, [])
+  console.log(blogsData)
   
 
   const blogPostCardComponents = blogsData.map((blog) => {
