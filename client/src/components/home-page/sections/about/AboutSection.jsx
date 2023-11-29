@@ -15,7 +15,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="about sec-pad">
       <div className="main-container">
-        <h2 className="heading heading-sec heading-sec__mb-med">
+        <h2 className="heading heading-sec">
           <span className="heading-sec__main">About Me</span>
 
           <p className="heading-sec__sub">
@@ -39,9 +39,9 @@ export default function AboutSection() {
           
           
           <hr className="secondary"/>
-          <p className="heading-sec__sub">
-            <em>If you are interested in collaborating or getting to know me better, don't hesitate to reach out. I am always happy to connect with someone new!</em>
-          </p>
+          <h3 className="heading-sm center-text">
+            Interested in Working With Me?
+          </h3>
           <a href="#contact" id="get-in-touch-btn" className="btn btn--med btn--theme btn--center dynamicBgClr">Get in Touch!</a>
         </h2>
       </div>

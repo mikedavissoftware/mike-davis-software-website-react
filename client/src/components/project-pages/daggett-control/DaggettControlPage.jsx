@@ -1,4 +1,4 @@
-
+import Video from "../../../assets/mp4/daggett-control-hero-1080.mp4"
 
 
 export default function DaggettControlPage() {
@@ -8,9 +8,8 @@ export default function DaggettControlPage() {
   return (
     <div>
       <section className="project-cs-hero">
-        {/* Background image should be a video of scrolling through the site, maybe */}
         <video autoplay loop muted plays-inline className="project-cs-hero__video">
-          <source src="./assets/mp4/daggett-control-hero-1080.mp4" type="video/mp4" />
+          <source src={Video} type="video/mp4" />
         </video>
         
         <div className="project-cs-hero__content">

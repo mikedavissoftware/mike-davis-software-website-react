@@ -97,6 +97,10 @@
   letter-spacing: 1px;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .main-container {
   max-width: 120rem;
   margin: auto;
@@ -150,21 +154,9 @@
 .sec-pad {
   padding: 9rem 0 9rem 0;
   @include respond(tab-port) {
-    padding: 9rem 0 6rem 0;
+    padding: 6rem 0 6rem 0;
   }
 }
-// .sec-pad-before {
-//   padding: 12rem 0 0 0;
-//   @include respond(tab-port) {
-//     padding: 8rem 0 0 0;
-//   }
-// }
-// .sec-pad-after {
-//   padding: 0 0 12rem 0;
-//   @include respond(tab-port) {
-//     padding: 0 0 8rem 0;
-//   }
-// }
 
 .text-primary {
   color: #fff;

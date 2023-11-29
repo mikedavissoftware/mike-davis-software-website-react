@@ -19,7 +19,7 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="skills sec-pad">
       <div className="main-container">
-        <h2 className="heading-sec__mb-med">
+        <h2 className="heading heading-sec">
           <span className="heading-sec__main">My Skills</span>
           <p className="heading-sec__sub">
           </p>

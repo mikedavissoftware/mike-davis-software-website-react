@@ -4,12 +4,12 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-gap: 5rem;
-    margin-bottom: 11rem;
+    margin-bottom: 3rem;
 
     @include respond(tab-port) {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
-      margin-bottom: 8rem;
+      margin-bottom: 0;
     }
 
     @include respond(tab-port) {
@@ -23,6 +23,7 @@
     &-img {
       height: 40rem;
       width: 60rem;
+      margin: 2rem 0;
       display: block;
       object-fit: cover;
       overflow: hidden;
