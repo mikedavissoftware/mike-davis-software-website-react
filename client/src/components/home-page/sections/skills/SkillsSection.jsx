@@ -9,7 +9,7 @@ import FoodAndHospitalityAccordion from "./accordions/FoodAndHospitalityAccordio
 
 export default function SkillsSection() {
 
-  const [active, setActive] = useState("software-engineering")
+  const [active, setActive] = useState("")
 
   const handleClick = (event) => {
     (event.target.id === active) ? (setActive("")) : (setActive(event.target.id));

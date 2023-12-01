@@ -6,7 +6,7 @@ import BioShort from "./bio/BioShort"
 
 export default function AboutSection() {
 
-  const [bioShort, setBioShort] = useState(false)
+  const [bioShort, setBioShort] = useState(true)
 
   function handleChange() {
     setBioShort(!bioShort)
@@ -27,7 +27,7 @@ export default function AboutSection() {
           <ul class="tg-list">
             <li class="tg-list-item">
               <input class="tgl tgl-skewed" id="cb3" type="checkbox" onChange={() => handleChange()} />
-              <label class="tgl-btn" data-tg-off="Long Version" data-tg-on="Short Version" for="cb3"></label>
+              <label class="tgl-btn" data-tg-off="Click for Long Bio" data-tg-on="Click for Short Bio" for="cb3"></label>
             </li>
           </ul>
 
