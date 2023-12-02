@@ -1,15 +1,27 @@
 import { Link } from "react-router-dom"
 
 
-export default function DaggettControlCard({ project }) {
+export default function ProjectCard({ project }) {
 
+  console.log(project.buttons)
 
+  const buttonComponents = project.buttons.map((button) => {
+    return (
+      (button.link != "") ? (
+        <Link 
+          to={button.link}
+          className="btn btn--med btn--theme dynamicBgClr"
+          target="_blank"
+        >{button.text}</Link>
+      ) : (<></>)
+    )
+  })
 
   return (
     <div className="projects__row">
       <div className="projects__row-img-cont">
         <img
-          src={`../../../../../assets/png/project-mockups-masked/${project.imagURL}`}
+          src={`src/assets/png/project-mockup-masked/${project.imageURLs[0]}`}
           alt="Software Screenshot"
           className="projects__row-img"
           loading="lazy"
@@ -20,25 +32,7 @@ export default function DaggettControlCard({ project }) {
         <p className="projects__row-content-desc">
           {project.description}
         </p>
-        <Link 
-          to={project.frontEndURL}
-          className="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >Front End App</Link>
-        {(project.backEndURL) ? (
-          <Link 
-            to={project.frontEndURL}
-            className="btn btn--med btn--theme dynamicBgClr"
-            target="_blank"
-          >Back End App</Link>
-        ) : (
-          <></>
-        )}
-        <Link 
-          to={project.githubURL}
-          className="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >Github Repo</Link>
+        {buttonComponents}
       </div>
     </div>
   )

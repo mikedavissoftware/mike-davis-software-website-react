@@ -34,11 +34,11 @@ export default function ProjectsSection() {
 
         <div className="projects__content">
           {projectCardComponents}
-          <DaggettControlCard />
+          {/* <DaggettControlCard />
           <hr className="secondary"/>
           <SpiritualDirectionCard />
           <hr className="secondary"/>
-          <BackyardBowlsCard />
+          <BackyardBowlsCard /> */}
         </div>
       </div>
     </section>

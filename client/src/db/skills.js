@@ -42,6 +42,7 @@ export const software = {
     "Object Oriented Programming",
     "Web Development",
     "Web & UI Design",
+    "Responsive Design",
     "CRUD",
     "Custom API's",
     "RESTful Routing",

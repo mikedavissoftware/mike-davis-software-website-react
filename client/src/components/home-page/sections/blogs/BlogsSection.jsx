@@ -15,7 +15,7 @@ export default function BlogsSection() {
       setBlogsData(articlesData.slice(0,3))
     })
   }, [])
-  console.log(blogsData)
+  // console.log(blogsData)
   
 
   const blogPostCardComponents = blogsData.map((blog, index) => {

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 
 export default function BlogPostCard({ blog }) {
 
-  console.log(blog)
 
+  
   return (
     <div className="blogs__row">
       <div className="blogs__row-img-cont">
