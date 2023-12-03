@@ -1,12 +1,35 @@
+import { useRef, useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
 
 export default function BlogPostCard({ blog }) {
 
-
+  // Beginning of viewport code
+  const containerRef = useRef(null)
+  const [ isVisible, setIsVisible ] = useState(false)
+  const callbackFunction = (entries) => {
+    const [ entry ] = entries
+    if (entry.isIntersecting) {
+      setIsVisible(true)
+    }
+  }
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0
+  }
+  useEffect(() => {
+    const observer = new IntersectionObserver(callbackFunction, options)
+    if (containerRef.current) observer.observe(containerRef.current)
+    
+    return () => {
+      if(containerRef.current) observer.unobserve(containerRef.current)
+    }
+  }, [containerRef, options])
+  // Ending of viewport code
   
   return (
-    <div className="blogs__row">
+    <div className={isVisible ? ("blogs__row animate slide-left") : ("")} ref={containerRef}>
       <div className="blogs__row-img-cont">
         <img
           src={blog.cover_image}

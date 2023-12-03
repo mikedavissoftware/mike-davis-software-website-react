@@ -2,7 +2,7 @@ export const projects = {
   cards: [
     {
       title: "Daggett Control Company",
-      description: "A freelancing contract I took on in the months following my graduation from Flatiron School. This site has a React front end with Tailwind CSS, and a Ruby on Rails back end API & database admin app, built from scratch using Rails Views. This is the most comprehensive project I have built, since it combines so many different techniques and includes a fully deployed front & back end.",
+      description: "This was a freelancing contract I took on in the months following my graduation from Flatiron School. I created this site with a React front end with Tailwind CSS, and a Ruby on Rails back end API & database admin app, built from scratch using Rails Views. This is the most comprehensive website I have built, since it combines so many different techniques and includes a fully deployed front & back end.",
       imageURLs: [
         "project-mockup-masked.png",
       ],
@@ -16,7 +16,7 @@ export const projects = {
           link: "https://daggett-control-website.onrender.com/users"
         },
         {
-          text: "Github",
+          text: "Github Repo",
           link: "https://github.com/mikedavissoftware/daggett-control-website"
         },
         {
@@ -66,7 +66,7 @@ export const projects = {
           link: ""
         },
         {
-          text: "Github",
+          text: "Github Repo",
           link: "https://github.com/mikedavissoftware/backyard-bowls-website"
         },
         {
