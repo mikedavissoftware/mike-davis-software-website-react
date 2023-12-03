@@ -456,5 +456,266 @@ export const skills = [
         ]
       },
     ]
+  },
+  {
+    title: "Software Engineering",
+    categories: [
+      {
+        id: 1,
+        name: "Languages",
+        items: [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Ruby",
+          "Python"
+        ]
+      },
+      {
+        id: 2,
+        name: "Frameworks, Libraries, & Plugins",
+        items: [
+          "React",
+          "Redux",
+          "Ruby on Rails",
+          "ActiveRecord",
+          "Rails ActiveAdmin",
+          "SASS",
+          "Tailwind CSS",
+          "Daisy UI",
+          "Semantic UI"
+        ]
+      },
+      {
+        id: 3,
+        name: "Platforms, Environments, & Other Tools",
+        items: [
+          "Git",
+          "Github",
+          "Wordpress",
+          "Render",
+          "Netlify",
+          "Google APIs",
+          "Google Sheets",
+          "Microsoft Excel",
+          "Node.js",
+          "NPM & NPX",
+          "PostgreSQL",
+          "SQLite3",
+          "Rails Views",
+          "Vite",
+          "Create React App",
+          "VS Code",
+          "Postman"
+        ]
+      },
+      {
+        id: 4,
+        name: "Skills & Principles",
+        items: [
+          "Front End",
+          "Back End",
+          "Full Stack",
+          "Object Oriented Programming",
+          "Web Development",
+          "Web & UI Design",
+          "Responsive Design",
+          "CRUD",
+          "Custom API's",
+          "RESTful Routing",
+          "Version Control",
+          "Branch Management",
+          "Clean Code",
+          "Refactoring & Optimization",
+          "Virtual Disks & Cloud Storage",
+          "Authentication & Authorization",
+          "Error & Exception Handling",
+          "Namespacing",
+          "Scope",
+          "Inheritance",
+          "Hooks",
+          "Dynamic Rendering",
+          "Data Validation",
+          "Client-Side Routing",
+          "Functions & Variables",
+          "Project File Structure",
+          "Exports & Imports"
+        ]
+      },
+    ]
+  },
+  {
+    title: "Software Engineering",
+    categories: [
+      {
+        id: 1,
+        name: "Languages",
+        items: [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Ruby",
+          "Python"
+        ]
+      },
+      {
+        id: 2,
+        name: "Frameworks, Libraries, & Plugins",
+        items: [
+          "React",
+          "Redux",
+          "Ruby on Rails",
+          "ActiveRecord",
+          "Rails ActiveAdmin",
+          "SASS",
+          "Tailwind CSS",
+          "Daisy UI",
+          "Semantic UI"
+        ]
+      },
+      {
+        id: 3,
+        name: "Platforms, Environments, & Other Tools",
+        items: [
+          "Git",
+          "Github",
+          "Wordpress",
+          "Render",
+          "Netlify",
+          "Google APIs",
+          "Google Sheets",
+          "Microsoft Excel",
+          "Node.js",
+          "NPM & NPX",
+          "PostgreSQL",
+          "SQLite3",
+          "Rails Views",
+          "Vite",
+          "Create React App",
+          "VS Code",
+          "Postman"
+        ]
+      },
+      {
+        id: 4,
+        name: "Skills & Principles",
+        items: [
+          "Front End",
+          "Back End",
+          "Full Stack",
+          "Object Oriented Programming",
+          "Web Development",
+          "Web & UI Design",
+          "Responsive Design",
+          "CRUD",
+          "Custom API's",
+          "RESTful Routing",
+          "Version Control",
+          "Branch Management",
+          "Clean Code",
+          "Refactoring & Optimization",
+          "Virtual Disks & Cloud Storage",
+          "Authentication & Authorization",
+          "Error & Exception Handling",
+          "Namespacing",
+          "Scope",
+          "Inheritance",
+          "Hooks",
+          "Dynamic Rendering",
+          "Data Validation",
+          "Client-Side Routing",
+          "Functions & Variables",
+          "Project File Structure",
+          "Exports & Imports"
+        ]
+      },
+    ]
+  },
+  {
+    title: "Software Engineering",
+    categories: [
+      {
+        id: 1,
+        name: "Languages",
+        items: [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Ruby",
+          "Python"
+        ]
+      },
+      {
+        id: 2,
+        name: "Frameworks, Libraries, & Plugins",
+        items: [
+          "React",
+          "Redux",
+          "Ruby on Rails",
+          "ActiveRecord",
+          "Rails ActiveAdmin",
+          "SASS",
+          "Tailwind CSS",
+          "Daisy UI",
+          "Semantic UI"
+        ]
+      },
+      {
+        id: 3,
+        name: "Platforms, Environments, & Other Tools",
+        items: [
+          "Git",
+          "Github",
+          "Wordpress",
+          "Render",
+          "Netlify",
+          "Google APIs",
+          "Google Sheets",
+          "Microsoft Excel",
+          "Node.js",
+          "NPM & NPX",
+          "PostgreSQL",
+          "SQLite3",
+          "Rails Views",
+          "Vite",
+          "Create React App",
+          "VS Code",
+          "Postman"
+        ]
+      },
+      {
+        id: 4,
+        name: "Skills & Principles",
+        items: [
+          "Front End",
+          "Back End",
+          "Full Stack",
+          "Object Oriented Programming",
+          "Web Development",
+          "Web & UI Design",
+          "Responsive Design",
+          "CRUD",
+          "Custom API's",
+          "RESTful Routing",
+          "Version Control",
+          "Branch Management",
+          "Clean Code",
+          "Refactoring & Optimization",
+          "Virtual Disks & Cloud Storage",
+          "Authentication & Authorization",
+          "Error & Exception Handling",
+          "Namespacing",
+          "Scope",
+          "Inheritance",
+          "Hooks",
+          "Dynamic Rendering",
+          "Data Validation",
+          "Client-Side Routing",
+          "Functions & Variables",
+          "Project File Structure",
+          "Exports & Imports"
+        ]
+      },
+    ]
   }
 ]
