@@ -1,8 +1,4 @@
-import DaggettControlCard from "./individual-projects/DaggettControlCard"
-import SpiritualDirectionCard from "./individual-projects/SpiritualDirectionCard"
-import BackyardBowlsCard from "./individual-projects/BackyardBowlsCard"
-
-import ProjectCard from "./individual-projects/ProjectCard"
+import ProjectCard from "./ProjectCard"
 
 import { projects } from "../../../../db/projects"
 
@@ -34,11 +30,6 @@ export default function ProjectsSection() {
 
         <div className="projects__content">
           {projectCardComponents}
-          {/* <DaggettControlCard />
-          <hr className="secondary"/>
-          <SpiritualDirectionCard />
-          <hr className="secondary"/>
-          <BackyardBowlsCard /> */}
         </div>
       </div>
     </section>

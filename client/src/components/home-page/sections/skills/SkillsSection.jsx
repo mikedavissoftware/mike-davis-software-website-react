@@ -1,12 +1,7 @@
 import { useState } from "react"
 import { skills } from "../../../../db/skills"
 
-import SoftwareAccordion from "./accordions/SoftwareAccordion"
-import MediaAccordion from "./accordions/MediaAccordion"
-import EntrepreneurshipAccordion from "./accordions/EntrepreneurshipAccordion"
-import MusicAccordion from "./accordions/MusicAccordion"
-import FoodAndHospitalityAccordion from "./accordions/FoodAndHospitalityAccordion"
-import Accordion from "./accordions/Accordion"
+import Accordion from "./Accordion"
 
 
 export default function SkillsSection() {
@@ -32,11 +27,6 @@ export default function SkillsSection() {
         </h2>
         <div className="skills__content">
           {accordionComponents}
-          {/* <SoftwareAccordion active={active} handleClick={handleClick} /> */}
-          <MediaAccordion active={active} handleClick={handleClick} />
-          <EntrepreneurshipAccordion active={active} handleClick={handleClick} />
-          <MusicAccordion active={active} handleClick={handleClick} />
-          <FoodAndHospitalityAccordion active={active} handleClick={handleClick} />
         </div>
       </div>
     </section>

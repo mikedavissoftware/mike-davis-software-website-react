@@ -1,5 +1,6 @@
 import { useState } from "react"
 
+import BioToggleButton from "./bio/BioToggleButton"
 import BioLong from "./bio/BioLong"
 import BioShort from "./bio/BioShort"
 
@@ -7,10 +8,6 @@ import BioShort from "./bio/BioShort"
 export default function AboutSection() {
 
   const [bioShort, setBioShort] = useState(true)
-
-  function handleChange() {
-    setBioShort(!bioShort)
-  }
 
   return (
     <section id="about" className="about sec-pad">
@@ -24,12 +21,7 @@ export default function AboutSection() {
 
           {/* <hr className="secondary"/> */}
 
-          <ul class="tg-list">
-            <li class="tg-list-item">
-              <input class="tgl tgl-skewed" id="cb3" type="checkbox" onChange={() => handleChange()} />
-              <label class="tgl-btn" data-tg-off="Click for Long Bio" data-tg-on="Click for Short Bio" for="cb3"></label>
-            </li>
-          </ul>
+          <BioToggleButton bioShort={bioShort} setBioShort={setBioShort} />
 
           {(bioShort) ? (
             <BioShort />

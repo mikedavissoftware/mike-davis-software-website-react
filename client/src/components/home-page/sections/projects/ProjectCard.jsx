@@ -41,7 +41,7 @@ export default function ProjectCard({ project }) {
   })
 
   return (
-    <div className={isVisible ? ("projects__row animate slide-left") : ("")} ref={containerRef}>
+    <div className={isVisible ? ("projects__row animate slide-left") : ("d-none")} ref={containerRef}>
       <div className="projects__row-img-cont">
         <img
           src={`src/assets/png/project-mockup-masked/${project.imageURLs[0]}`}
