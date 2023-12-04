@@ -36,7 +36,7 @@ export default function Accordion({ skill, active, handleClick }) {
   })
 
   return (
-    <div className={isVisible ? ("animate slide-up delay-2") : ("d-none")} ref={containerRef}>
+    <div className={isVisible ? ("animate slide-up delay-1") : ("d-none")} ref={containerRef}>
       <button 
         className={`skills__content-title accordion${(active === skill.class) ? " active" : ""}`}
         id={skill.class}

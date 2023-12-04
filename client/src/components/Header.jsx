@@ -53,19 +53,19 @@ export default function Header() {
         <div className="header__main">
           <ul className="header__links">
             <li className="header__link-wrapper">
-              <a href="./#home-hero" className="header__link"> Home </a>
+              <a href="./#home-hero" className="header__link">Home</a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./#about" className="header__link"> About </a>
+              <a href="./#about" className="header__link">About</a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./#projects" className="header__link"> Projects </a>
+              <a href="./#projects" className="header__link">Projects</a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./#blogs" className="header__link"> Blogs </a>
+              <a href="./#blogs" className="header__link">Blogs</a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./#contact" className="header__link"> Contact </a>
+              <a href="./#contact" className="header__link">Contact</a>
             </li>
           </ul>
           
@@ -90,23 +90,23 @@ export default function Header() {
         <div className="header__sm-menu-content">
           <ul className="header__sm-menu-links">
             <li className="header__sm-menu-link">
-              <a href="./#home-hero" onClick={() => setActive(false)}> Home </a>
+              <a href="./#home-hero" onClick={() => setActive(false)}>Home</a>
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./#about" onClick={() => setActive(false)}> About </a>
+              <a href="./#about" onClick={() => setActive(false)}>About</a>
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./#projects" onClick={() => setActive(false)}> Projects </a>
+              <a href="./#projects" onClick={() => setActive(false)}>Projects</a>
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./#blogs" onClick={() => setActive(false)}> Blogs </a>
+              <a href="./#blogs" onClick={() => setActive(false)}>Blogs</a>
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./#contact" onClick={() => setActive(false)}> Contact </a>
+              <a href="./#contact" onClick={() => setActive(false)}>Contact</a>
             </li>
           </ul>
         </div>

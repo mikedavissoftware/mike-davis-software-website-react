@@ -175,7 +175,7 @@ export const skills = [
     ]
   },
   {
-    title: "Entrepreneurship & Business Development",
+    title: "Entrepreneurship & Business",
     class: "entrepreneurship-and-business",
     categories: [
       {

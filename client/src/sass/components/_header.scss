@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
     @include respond(tab-port) {
       // grid-template-columns: auto 30% 20%;
       display: grid;
@@ -85,7 +85,7 @@
   }
 
   &__link {
-    padding: 2.2rem 3rem;
+    padding: 2.2rem 2rem;
     display: inline-block;
     font-size: 1.6rem;
     color: #333;
