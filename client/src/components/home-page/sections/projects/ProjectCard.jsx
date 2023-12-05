@@ -35,7 +35,7 @@ export default function ProjectCard({ project }) {
       (button.link != "") ? (
         <Link 
           to={button.link}
-          className="btn btn--med btn--theme dynamicBgClr"
+          className="btn btn--sm btn--theme dynamicBgClr"
           target="_blank"
         >{button.text}</Link>
       ) : (<></>)
@@ -44,20 +44,24 @@ export default function ProjectCard({ project }) {
 
   return (
     <div className={isVisible ? ("projects__row animate slide-left delay-1") : ("d-none")} ref={containerRef}>
-      {/* <img src={`src/assets/png/project-mockup-masked/${project.imageURLs[0]}`} /> */}
-      <div className="projects__row-img-cont">
-        <img
-          src={`src/assets/png/project-mockup-masked/${project.imageURLs[0]}`}
-          alt="Software Screenshot"
-          className="projects__row-img"
-          // loading="lazy"
-        />
+      <div className="projects__row-non-buttons">
+        <div className="projects__row-img-cont">
+          <img
+            src={`src/assets/png/project-mockup-masked/${project.imageURLs[0]}`}
+            alt="Software Screenshot"
+            className="projects__row-img"
+            loading="lazy"
+          />
+        </div>
+        <div className="projects__row-content">
+          <h3 className="projects__row-content-title">{project.title}</h3>
+          <p className="projects__row-content-desc">
+            {project.description}
+          </p>
+          
+        </div>  
       </div>
-      <div className="projects__row-content">
-        <h3 className="projects__row-content-title">{project.title}</h3>
-        <p className="projects__row-content-desc">
-          {project.description}
-        </p>
+      <div className="projects__row-buttons">
         {buttonComponents}
       </div>
     </div>

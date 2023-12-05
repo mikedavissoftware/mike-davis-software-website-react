@@ -132,6 +132,11 @@
     font-size: 1.6rem;
     margin: 1rem 0;
   }
+  &--sm {
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
   &--theme {
     background: $themeClrPrimary;
     color: #fff;
