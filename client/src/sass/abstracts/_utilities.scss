@@ -17,7 +17,6 @@
   text-align: right;
   @include respond(phone) {
     font-size: 4rem;
-    
   }
 }
 
@@ -136,6 +135,7 @@
     padding: 1rem 3rem;
     font-size: 1.4rem;
     margin: 1rem 0;
+    width: fit-content
   }
   &--theme {
     background: $themeClrPrimary;
@@ -333,4 +333,12 @@ hr.secondary {
   border-width: 1px;
   border-radius: 3px;
   border-color: $themeClrPrimary;
+}
+
+.success {
+  color: $themeClrPrimaryLight;
+}
+
+.error {
+  color: $themeClrSecondary;
 }

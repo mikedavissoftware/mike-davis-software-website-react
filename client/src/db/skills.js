@@ -1,4 +1,5 @@
 export const skills = [
+  // Software Engineering
   {
     title: "Software Engineering",
     class: "software-engineering",
@@ -81,12 +82,14 @@ export const skills = [
           "Data Validation",
           "Client-Side Routing",
           "Functions & Variables",
+          "Environment Variables",
           "Project File Structure",
           "Exports & Imports"
         ]
       }
     ]
   },
+  // Media Production
   {
     title: "Media Production",
     class: "media-production",
@@ -174,6 +177,7 @@ export const skills = [
       }
     ]
   },
+  // Entrepreneurship & Business
   {
     title: "Entrepreneurship & Business",
     class: "entrepreneurship-and-business",
@@ -271,6 +275,7 @@ export const skills = [
       }
     ]
   },
+  // Music Composition & Performance
   {
     title: "Music Composition & Performance",
     class: "music-composition-and-performance",
@@ -327,6 +332,7 @@ export const skills = [
       }
     ]
   },
+  // Food, Hospitality, & Logistics
   {
     title: "Food, Hospitality, & Logistics",
     class: "food-and-hospitality",

@@ -25,6 +25,7 @@
     &-img-cont {
       overflow: hidden;
       position: relative;
+      height: 48rem;
       @include respond(tab-port) {
         height: 25rem;
       }
@@ -75,7 +76,8 @@
       // align-items: center;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 5rem;
+      grid-gap: 2rem;
+      justify-items: center;
       @include respond(tab-port) {
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -24,7 +24,7 @@
     }
   }
   &__form-field {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     @include respond(phone) {
       margin-bottom: 3rem;
     }
@@ -37,6 +37,14 @@
     margin-bottom: 1rem;
     display: block;
     text-align: left;
+  }
+  &__form-status {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: block;
+    text-align: right;
   }
   &__form-input {
     color: #333;

@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+// import { emailjs } from "@emailjs/browser"
 
 export default function ContactSection() {
 
@@ -16,65 +16,67 @@ export default function ContactSection() {
     console.log(formData)
   }
 
+  const [success, setSuccess] = useState(null)
+
   function handleSubmit(e) {
     e.preventDefault()
-    console.log(formData)
-    fetch("https://public.herotofu.com/v1/ce6c3800-8756-11ee-b7d9-ffc4a6fbb414", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formData)
-    })
-    setFormData(newForm)
+    emailjs.send("mds_gmail", "contact_form_mds", formData, import.meta.env.VITE_CONTACT_FORM_KEY)
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      setFormData(newForm)
+      setSuccess(true)
+   }, function(error) {
+      console.log('FAILED...', error);
+      setSuccess(false)
+   });
   }
 
   return (
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
+    <section id="contact" className="contact sec-pad dynamicBg">
+      <div className="main-container">
 
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
+        <h2 className="heading heading-sec heading-sec__mb-med">
+          <span className="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span className="heading-sec__sub heading-sec__sub--lt">
             Though this website is mainly geared towards software engineering work, I am always open to discussing new projects in any of my fields of expertise (See <a href="#skills" style={{textDecoration: "underline"}}>My Skills</a>). Please use the form below to get started!
           </span>
         </h2>
 
-        <div class="contact__form-container">
-          <form action="#" class="contact__form" onSubmit={handleSubmit}>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
+        <div className="contact__form-container">
+          <form action="#" className="contact__form" onSubmit={handleSubmit}>
+            <div className="contact__form-field">
+              <label className="contact__form-label" for="name">Name</label>
               <input
                 required
                 placeholder="Enter Your Name"
                 type="text"
-                class="contact__form-input"
+                className="contact__form-input"
                 name="name"
                 id="name"
                 value={formData.name}
                 onChange={handleChange}
               />
             </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
+            <div className="contact__form-field">
+              <label className="contact__form-label" for="email">Email</label>
               <input
                 required
                 placeholder="Enter Your Email"
                 type="text"
-                class="contact__form-input"
+                className="contact__form-input"
                 name="email"
                 id="email"
                 value={formData.email}
                 onChange={handleChange}
               />
             </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
+            <div className="contact__form-field">
+              <label className="contact__form-label" for="message">Message</label>
               <textarea
                 required
                 cols="30"
                 rows="10"
-                class="contact__form-input"
+                className="contact__form-input"
                 placeholder="Enter Your Message"
                 name="message"
                 id="message"
@@ -82,12 +84,19 @@ export default function ContactSection() {
                 onChange={handleChange}
               ></textarea>
             </div>
-            <button type="submit" class="btn btn--theme contact__btn">
+
+            {(success) ? (
+              <p className="contact__form-status success">Contact form submitted successfully! I will be in touch as soon as I can!</p>
+            ) : (
+              <p className="contact__form-status error">There was an error submitting the contact form. Please check your entry and try again, or reach out on <a href="https://www.linkedin.com/in/mikedavissoftware">LinkedIn</a>.</p>
+            )}
+
+            <button type="submit" className="btn btn--theme contact__btn">
               Submit
             </button>
           </form>
         </div>
-
+        {}
       </div>
     </section>
   )
