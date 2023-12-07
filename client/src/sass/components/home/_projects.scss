@@ -25,7 +25,7 @@
     &-img-cont {
       overflow: hidden;
       position: relative;
-      height: 48rem;
+      height: 42rem;
       @include respond(tab-port) {
         height: 25rem;
       }
@@ -40,7 +40,7 @@
       transform: translate(-50%, -50%);
     }
     &-content {
-      padding: 2rem 0;
+      // padding: 2rem 0;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -78,10 +78,11 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 2rem;
       justify-items: center;
+      margin: 0 20rem 6rem 20rem;
       @include respond(tab-port) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 3rem;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        margin: 0 0 4rem 0;
       }
     }
   }

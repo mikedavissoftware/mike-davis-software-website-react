@@ -59,6 +59,9 @@ export default function Header() {
               <a href="./#about" className="header__link">About</a>
             </li>
             <li className="header__link-wrapper">
+              <a href="./#skills" className="header__link">Skills</a>
+            </li>
+            <li className="header__link-wrapper">
               <a href="./#projects" className="header__link">Projects</a>
             </li>
             <li className="header__link-wrapper">
@@ -95,6 +98,10 @@ export default function Header() {
 
             <li className="header__sm-menu-link">
               <a href="./#about" onClick={() => setActive(false)}>About</a>
+            </li>
+
+            <li className="header__sm-menu-link">
+              <a href="./#skills" onClick={() => setActive(false)}>Skills</a>
             </li>
 
             <li className="header__sm-menu-link">

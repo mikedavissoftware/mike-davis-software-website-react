@@ -16,7 +16,7 @@ export default function ContactSection() {
     console.log(formData)
   }
 
-  const [success, setSuccess] = useState(null)
+  const [success, setSuccess] = useState("")
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -84,12 +84,15 @@ export default function ContactSection() {
                 onChange={handleChange}
               ></textarea>
             </div>
-
-            {(success) ? (
-              <p className="contact__form-status success">Contact form submitted successfully! I will be in touch as soon as I can!</p>
-            ) : (
-              <p className="contact__form-status error">There was an error submitting the contact form. Please check your entry and try again, or reach out on <a href="https://www.linkedin.com/in/mikedavissoftware">LinkedIn</a>.</p>
-            )}
+            
+            {(success != "") ? (
+              (success) ? (
+                <p className="contact__form-status success">Contact form submitted successfully! I will be in touch as soon as I can!</p>
+              ) : (
+                <p className="contact__form-status error">There was an error submitting the contact form. Please check your entry and try again, or reach out on <a href="https://www.linkedin.com/in/mikedavissoftware">LinkedIn</a>.</p>
+              )
+            ) : (null)
+            }
 
             <button type="submit" className="btn btn--theme contact__btn">
               Submit

@@ -13,15 +13,15 @@ export default function SkillsSection() {
     // console.log(event.target.id)
   }
 
-  const accordionComponents = skills.map((skill) => {
-    return (<Accordion active={active} handleClick={handleClick} skill={skill} />)
+  const accordionComponents = skills.map((skill, index) => {
+    return (<Accordion key={index + 1} active={active} handleClick={handleClick} skill={skill} />)
   })
 
   return (
     <section id="skills" className="skills sec-pad">
       <div className="main-container">
         <h2 className="heading heading-sec">
-          <span className="heading-sec__main">My Skills</span>
+          <span className="heading-sec__main">Skills</span>
           <p className="heading-sec__sub">
           </p>
         </h2>

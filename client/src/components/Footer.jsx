@@ -15,7 +15,17 @@ export default function Footer() {
           <div className="main-footer__row main-footer__row-2">
             <h4 className="heading heading-sm text-lt">Mike Davis</h4>
             <p className="main-footer__short-desc">
-              Software Engineer<br/>Multimedia Producer<br/>Creative Entrepreneur<br/>Professional Musician
+              Software Engineer
+              <br/>
+              Multimedia Producer
+              <br/>
+              Creative Entrepreneur
+              <br/>
+              Professional Musician
+              <br/>
+              Food Logistics Professional
+              <br/>
+              Barista & Chef
             </p>
             <div className="main-footer__social-cont">
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mikedavissoftware">

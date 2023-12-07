@@ -34,6 +34,7 @@ export default function ProjectCard({ project }) {
     return (
       (button.link != "") ? (
         <Link 
+          key={button.id * project.id}
           to={button.link}
           className="btn btn--sm btn--theme dynamicBgClr"
           target="_blank"

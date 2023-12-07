@@ -1,8 +1,6 @@
 .home-hero {
   color: #fff;
-
   height: 100vh;
-
   min-height: 80rem;
   max-height: 120rem;
   position: relative;
@@ -20,7 +18,7 @@
     position: fixed;
     top: 50%;
     border: 2px solid #eee;
-    border-left: 2px solid #eee;
+    border-left: 4px solid #eee;
     transform: translateY(-50%);
     @include respond(tab-port) {
       display: none;
