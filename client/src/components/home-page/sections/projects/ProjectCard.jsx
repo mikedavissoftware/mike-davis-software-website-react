@@ -48,7 +48,7 @@ export default function ProjectCard({ project }) {
       <div className="projects__row-non-buttons">
         <div className="projects__row-img-cont">
           <img
-            src={`src/assets/png/project-mockup-masked/${project.imageURLs[0]}`}
+            src={`public/${project.imageURLs[0]}`}
             alt="Software Screenshot"
             className="projects__row-img"
             loading="lazy"
