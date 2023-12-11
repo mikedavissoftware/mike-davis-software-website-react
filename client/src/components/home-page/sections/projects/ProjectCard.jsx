@@ -1,7 +1,8 @@
 import { useRef, useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
-import ProjectImage from "../../../../assets/png/project-mockup-masked/project-mockup-masked.png"
+// import ProjectImage from "../../../../assets/png/project-mockup-masked/project-mockup-masked.png"
+import ProjectImage from "./ProjectImage"
 
 
 export default function ProjectCard({ project }) {
@@ -47,12 +48,8 @@ export default function ProjectCard({ project }) {
     <div className={isVisible ? ("projects__row animate slide-left delay-1") : ("d-none")} ref={containerRef}>
       <div className="projects__row-non-buttons">
         <div className="projects__row-img-cont">
-          <img
-            src={`public/${project.imageURLs[0]}`}
-            alt="Software Screenshot"
-            className="projects__row-img"
-            loading="lazy"
-          />
+          <ProjectImage imageIDs={project.imageIDs} />
+          {/* <h1>ayyy</h1> */}
         </div>
         <div className="projects__row-content">
           <h3 className="projects__row-content-title">{project.title}</h3>

@@ -1,11 +1,11 @@
+import { useState } from "react"
+
 import ProjectCard from "./ProjectCard"
 
 import { projects } from "../../../../db/projects"
 
 
 export default function ProjectsSection() {
-
-  console.log(projects)
 
   const projectCardComponents = projects.cards.map((project, index) => {
     return (
