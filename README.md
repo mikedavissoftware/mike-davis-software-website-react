@@ -25,7 +25,7 @@ Beyond local files, I also:
 
 #### To run the repository locally, clone the repository and then run these commands in your terminal
 
-```
+```bash
 npm install
 
 npm run dev
