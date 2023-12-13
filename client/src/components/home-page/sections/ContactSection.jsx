@@ -45,7 +45,7 @@ export default function ContactSection() {
         <div className="contact__form-container">
           <form action="#" className="contact__form" onSubmit={handleSubmit}>
             <div className="contact__form-field">
-              <label className="contact__form-label" for="name">Name</label>
+              <label className="contact__form-label" htmlFor="name">Name</label>
               <input
                 required
                 placeholder="Enter Your Name"
@@ -58,7 +58,7 @@ export default function ContactSection() {
               />
             </div>
             <div className="contact__form-field">
-              <label className="contact__form-label" for="email">Email</label>
+              <label className="contact__form-label" htmlFor="email">Email</label>
               <input
                 required
                 placeholder="Enter Your Email"
@@ -71,7 +71,7 @@ export default function ContactSection() {
               />
             </div>
             <div className="contact__form-field">
-              <label className="contact__form-label" for="message">Message</label>
+              <label className="contact__form-label" htmlFor="message">Message</label>
               <textarea
                 required
                 cols="30"

@@ -9,12 +9,7 @@ export default function ProjectsSection() {
 
   const projectCardComponents = projects.cards.map((project, index) => {
     return (
-      <>
-        <ProjectCard project={project} />
-        {(index < (projects.cards.length - 1)) ? (
-          <hr className="secondary"/>
-        ) : (<></>)}
-      </>
+      <ProjectCard key={project.id} project={project} index={index} arrayLength={projects.cards.length} />
     )
   })
 

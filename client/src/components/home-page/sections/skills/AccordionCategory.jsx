@@ -1,16 +1,10 @@
-
+import SkillBubble from "./SkillBubble"
 
 
 export default function AccordionCategory({ category }) {
 
-  const skillsList = category.items.map((item) => {
-    return (
-      (category.id == 1) ? (
-        <div key={category.id} className="skills__content-program">{item}</div>
-      ) : (
-        <div key={category.id} className="skills__content-skill">{item}</div>
-      )
-    )
+  const skillsList = category.items.map((item, index=1) => {
+    return <SkillBubble key={index} item={item} categoryID={category.id} />
   })
 
   return (

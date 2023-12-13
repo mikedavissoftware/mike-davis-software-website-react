@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import ProjectImage from "./ProjectImage"
 
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, index, arrayLength }) {
 
   // Beginning of viewport code
   const containerRef = useRef(null)
@@ -35,12 +35,12 @@ export default function ProjectCard({ project }) {
     return (
       (button.link != "") ? (
         <Link 
-          key={button.id * project.id}
+          key={button.id}
           to={button.link}
           className="btn btn--sm btn--theme dynamicBgClr"
           target="_blank"
         >{button.text}</Link>
-      ) : (<></>)
+      ) : (null)
     )
   })
 
@@ -62,6 +62,9 @@ export default function ProjectCard({ project }) {
       <div className="projects__row-buttons">
         {buttonComponents}
       </div>
+      {(index < (arrayLength - 1)) ? (
+        <hr className="secondary"/>
+      ) : (<></>)}
     </div>
   )
 }

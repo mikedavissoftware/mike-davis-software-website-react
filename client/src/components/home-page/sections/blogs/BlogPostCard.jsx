@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
 
-export default function BlogPostCard({ blog }) {
+export default function BlogPostCard({ blog, index, arrayLength }) {
 
   // Beginning of viewport code
   const containerRef = useRef(null)
@@ -51,6 +51,7 @@ export default function BlogPostCard({ blog }) {
           target="_blank"
         >Read Article</Link>
       </div>
+      {(index < (arrayLength - 1)) ? (<hr className="secondary"/>) : (<></>)}
     </div>
   )
 }

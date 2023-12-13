@@ -14,16 +14,11 @@ export default function BlogsSection() {
       // console.log(articlesData)
       setBlogsData(articlesData.slice(0,3))
     })
-  }, [])
-  // console.log(blogsData)
-  
+  }, [])  
 
   const blogPostCardComponents = blogsData.map((blog, index) => {
     return (
-      <>
-        <BlogPostCard key={blog.id} blog={blog} />
-        {(index < (blogsData.length - 1)) ? (<hr className="secondary"/>) : (<></>)}
-      </>
+      <BlogPostCard key={blog.id} blog={blog} index={index} arrayLength={blogsData.length} />
     )
   })
 

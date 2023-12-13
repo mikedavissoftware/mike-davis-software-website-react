@@ -31,9 +31,9 @@ export default function AboutSection() {
           
           
           <hr className="secondary"/>
-          <h3 className="heading-sm center-text">
+          <span className="heading-sm center-text">
             Interested in Working With Me?
-          </h3>
+          </span>
           <a href="#contact" id="get-in-touch-btn" className="btn btn--med btn--theme btn--center dynamicBgClr">Get in Touch!</a>
         </h2>
       </div>
