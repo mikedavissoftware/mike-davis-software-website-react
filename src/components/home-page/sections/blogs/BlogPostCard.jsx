@@ -29,29 +29,29 @@ export default function BlogPostCard({ blog, index, arrayLength }) {
   // Ending of viewport code
   
   return (
-    <div className={isVisible ? ("blogs__row animate slide-left delay-1") : ("d-none")} ref={containerRef}>
-      <div className="blogs__row-img-cont">
-        <img
-          src={blog.cover_image}
-          alt="Software Screenshot"
-          className="blogs__row-img"
-          loading="lazy"
-        />
-      </div>
-      <div className="blogs__row-content">
-        <h3 className="blogs__row-content-title"><a href={blog.canonical_url} target="_blank">{blog.title}</a></h3>
-        <p className="blogs__row-content-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-          facilis tempora, explicabo quae quod deserunt eius sapiente
-          praesentium.
-        </p>
-        <Link 
-          to="/backyard-bowls"
-          className="btn btn--med btn--theme dynamicBgClr"
-          target="_blank"
-        >Read Article</Link>
+    <>
+      <div className={isVisible ? ("blogs__row animate slide-left delay-1") : ("d-none")} ref={containerRef}>
+        <div className="blogs__row-img-cont">
+          <img
+            src={blog.cover_image}
+            alt="Software Screenshot"
+            className="blogs__row-img"
+            loading="lazy"
+          />
+        </div>
+        <div className="blogs__row-content">
+          <h3 className="blogs__row-content-title"><a href={blog.canonical_url} target="_blank">{blog.title}</a></h3>
+          <p className="blogs__row-content-desc">
+            {`"${blog.description.replace("&amp;", "&")}"`}
+          </p>
+          <Link 
+            to="/backyard-bowls"
+            className="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+          >Read Blog Post</Link>
+        </div>
       </div>
       {(index < (arrayLength - 1)) ? (<hr className="secondary"/>) : (<></>)}
-    </div>
+    </>
   )
 }

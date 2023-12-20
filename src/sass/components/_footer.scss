@@ -39,7 +39,8 @@
   }
 
   &__icon {
-    margin-right: 1rem;
+    margin: auto .5rem;
+    vertical-align: middle;
     width: 3rem;
     &--mr-none {
       margin-right: 0;

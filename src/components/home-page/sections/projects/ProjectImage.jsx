@@ -3,8 +3,8 @@ import { useState, useEffect } from "react"
 
 export default function ProjectImage({ imageIDs }) {
 
+  // CODE FOR SHUFFLING IMAGES
   const [imageCount, setImageCount] = useState(0)
-
 
   useEffect(() => {
     //Implementing the setInterval method
@@ -17,11 +17,11 @@ export default function ProjectImage({ imageIDs }) {
     return () => clearInterval(interval);
   }, [imageCount]);
 
-  // const imageComponents = imageIDs.map((imageID) => {
-  //   return(
+  const imageComponents = imageIDs.map((imageID) => {
+    return(
       
-  //   )
-  // })
+    )
+  })
   
   return (
     <>

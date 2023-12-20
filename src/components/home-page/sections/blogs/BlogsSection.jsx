@@ -11,7 +11,7 @@ export default function BlogsSection() {
     fetch("https://dev.to/api/articles?username=mikedavissoftware")
     .then(r => r.json())
     .then(articlesData => {
-      // console.log(articlesData)
+      console.log(articlesData)
       setBlogsData(articlesData.slice(0,3))
     })
   }, [])  

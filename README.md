@@ -6,7 +6,7 @@
 
 When I came across the Dopefolio portfolio template, I plugged in my information to it and decided that I would like to add more features and convert it to **React**. So, I got started!
 
-The original template was already using **SASS**, which was new to me. But, I found it pretty intuitive once I spent some time fiddling around with it. Ultimately, it behaves much the same as React does, but with CSS.
+The original template was already using **SASS**, which was new to me. But, I found it pretty intuitive once I spent some time fiddling around with it. Ultimately, it behaves much the same as React does with imports and separation of concerns into components, but with CSS instead.
 
 After reorganizing the SASS files a bit, I moved on to converting the project from HTML to React. My first choice for development server was **Vite**, since I have ample experience with it and it works lightning-fast.
 
@@ -30,3 +30,11 @@ npm install
 
 npm run dev
 ```
+
+<!--
+TO DO
+-Screenshots
+-Add Resume
+-Mobile Responsiveness
+-
+ -->

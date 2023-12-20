@@ -30,10 +30,10 @@ export default function AboutSection() {
           )}
           
           
-          <hr className="secondary"/>
-          <span className="heading-sm center-text">
+          {/* <hr className="secondary"/> */}
+          {/* <span className="heading-sm center-text" style={{fontStyle: "italic", fontWeight: "normal"}}>
             Interested in Working With Me?
-          </span>
+          </span> */}
           <a href="#contact" id="get-in-touch-btn" className="btn btn--med btn--theme btn--center dynamicBgClr">Get in Touch!</a>
         </h2>
       </div>

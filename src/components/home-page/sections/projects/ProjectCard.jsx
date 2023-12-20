@@ -1,9 +1,6 @@
 import { useRef, useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
-// import ProjectImage from "../../../../assets/png/project-mockup-masked/project-mockup-masked.png"
-import ProjectImage from "./ProjectImage"
-
 
 export default function ProjectCard({ project, index, arrayLength }) {
 
@@ -48,8 +45,12 @@ export default function ProjectCard({ project, index, arrayLength }) {
     <div className={isVisible ? ("projects__row animate slide-left delay-1") : ("d-none")} ref={containerRef}>
       <div className="projects__row-non-buttons">
         <div className="projects__row-img-cont">
-          <ProjectImage imageIDs={project.imageIDs} />
-          {/* <h1>ayyy</h1> */}
+          <img
+            src={`https://drive.google.com/uc?export=view&id=${project.gifID}`}
+            alt="Software Screenshot"
+            className="projects__row-img animate fade"
+            loading="lazy"
+          />
         </div>
         <div className="projects__row-content">
           <h3 className="projects__row-content-title">{project.title}</h3>
