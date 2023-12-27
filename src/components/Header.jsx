@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import ProfilePicture from "../assets/jpeg/mds-prof-pic-close-square.jpg"
 import LinkedInLogoBlack from "../assets/png/black/linkedin-ico-black.png"
@@ -11,8 +11,22 @@ export default function Header() {
 
   const [active, setActive] = useState(false)
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className="header" style={{opacity: `${(scrollPosition - 100) / 5}%`}}>
       <div className="header__content">
         <div className="header__logo-container">
           <div className="header__logo-img-cont">
@@ -70,6 +84,9 @@ export default function Header() {
             <li className="header__link-wrapper">
               <a href="./#contact" className="header__link">Contact</a>
             </li>
+            <li className="header__link-wrapper">
+              <a href="./resume" className="header__link">Resume</a>
+            </li>
           </ul>
           
           <div className="header__main-ham-menu-cont">
@@ -118,6 +135,8 @@ export default function Header() {
           </ul>
         </div>
       </div>
+
+      {/* <h1 style={{display: "block", textAlign: "center", fontSize: "30px"}}>{scrollPosition}</h1> */}
     </header>
   )
 }
