@@ -11,11 +11,11 @@ export default function Header() {
 
   const [active, setActive] = useState(false)
 
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollOpacity, setScrollOpacity] = useState(-500)
 
   const handleScroll = () => {
     const position = window.scrollY;
-    setScrollPosition(position);
+    setScrollOpacity((position - 100) / 5); // the "- 100" is for setting the start position of the header appearance further down
   };
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="header" style={{opacity: `${(scrollPosition - 100) / 5}%`}}>
+    <header className="header" style={(scrollOpacity >= 0) ? ({opacity: `${scrollOpacity}%`}) : ({display: "none"})}>
       <div className="header__content">
         <div className="header__logo-container">
           <div className="header__logo-img-cont">

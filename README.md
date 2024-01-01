@@ -34,7 +34,7 @@ npm run dev
 <!--
 TO DO
 -Screenshots
--Add Resume
+-Add Resume (button up top to separate page and linked in bio, skills, etc.)
 -Mobile Responsiveness
 -
  -->
