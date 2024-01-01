@@ -4,6 +4,8 @@ import { Link } from "react-router-dom"
 
 export default function BlogPostCard({ blog, index, arrayLength }) {
 
+  console.log(blog)
+
   // Beginning of viewport code
   const containerRef = useRef(null)
   const [ isVisible, setIsVisible ] = useState(false)
@@ -45,7 +47,7 @@ export default function BlogPostCard({ blog, index, arrayLength }) {
             {`"${blog.description.replace("&amp;", "&")}"`}
           </p>
           <Link 
-            to="/backyard-bowls"
+            to={blog.url}
             className="btn btn--med btn--theme dynamicBgClr"
             target="_blank"
           >Read Blog Post</Link>
