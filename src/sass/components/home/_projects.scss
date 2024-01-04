@@ -27,7 +27,7 @@
       position: relative;
       height: 42rem;
       @include respond(tab-port) {
-        height: 25rem;
+        height: 22rem;
       }
     }
     &-img {

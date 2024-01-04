@@ -32,10 +32,10 @@ export default function BioToggleButton({ bioShort, setBioShort }) {
   }
 
   return (
-    <ul className={isVisible ? ("tg-list animate glow") : ("tg-list d-none")} ref={containerRef}>
+    <ul className={isVisible ? ("tg-list animate glow delay-5") : ("tg-list d-none")} ref={containerRef}>
       <li className="tg-list-item">
         <input className="tgl tgl-skewed" id="cb3" type="checkbox" onChange={() => handleChange()} />
-        <label className="tgl-btn" data-tg-off="Click for Long Bio" data-tg-on="Click for Short Bio" htmlFor="cb3"></label>
+        <label className="tgl-btn" data-tg-off="Click for Longer Version" data-tg-on="Click for Shorter Version" htmlFor="cb3"></label>
       </li>
     </ul>
 )

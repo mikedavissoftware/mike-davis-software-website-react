@@ -15,7 +15,7 @@ export default function Header() {
 
   const handleScroll = () => {
     const position = window.scrollY;
-    setScrollOpacity((position - 100) / 5); // the "- 100" is for setting the start position of the header appearance further down
+    setScrollOpacity((position - 250) / 5); // the "- 100" is for setting the start position of the header appearance further down
   };
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header className="header" style={(scrollOpacity >= 0) ? ({opacity: `${scrollOpacity}%`}) : ({display: "none"})}>
       <div className="header__content">
-        <div className="header__logo-container">
+        <div className="header__logo-container animate slide-left">
           <div className="header__logo-img-cont">
             <img
               src={ProfilePicture}
@@ -65,12 +65,12 @@ export default function Header() {
         </div>
 
         <div className="header__main">
-          <ul className="header__links">
+          <ul className="header__links animate slide-right">
             <li className="header__link-wrapper">
               <a href="./#home-hero" className="header__link">Home</a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./#about" className="header__link">About</a>
+              <a href="./#about" className="header__link">Bio</a>
             </li>
             <li className="header__link-wrapper">
               <a href="./#skills" className="header__link">Skills</a>
@@ -85,7 +85,7 @@ export default function Header() {
               <a href="./#contact" className="header__link">Contact</a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./resume" className="header__link">Resume</a>
+              <a href="public/pdf/test-pdf.pdf" target="_blank" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 0", padding: "1rem 2rem", letterSpacing: "1px"}}>Resume</a>
             </li>
           </ul>
           
@@ -114,7 +114,7 @@ export default function Header() {
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="./#about" onClick={() => setActive(false)}>About</a>
+              <a href="./#about" onClick={() => setActive(false)}>Bio</a>
             </li>
 
             <li className="header__sm-menu-link">
@@ -131,6 +131,10 @@ export default function Header() {
 
             <li className="header__sm-menu-link">
               <a href="./#contact" onClick={() => setActive(false)}>Contact</a>
+            </li>
+
+            <li className="header__sm-menu-link">
+              <a href="public/pdf/test-pdf.pdf" target="_blank" onClick={() => setActive(false)}>Resume</a>
             </li>
           </ul>
         </div>

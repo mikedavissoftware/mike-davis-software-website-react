@@ -1,5 +1,5 @@
 import HeroSection from "./sections/HeroSection"
-import AboutSection from "./sections/about/AboutSection"
+import AboutSection from "./sections/bio/BioSection"
 import SkillsSection from "./sections/skills/SkillsSection"
 import ProjectsSection from "./sections/projects/ProjectsSection"
 import BlogsSection from "./sections/blogs/BlogsSection"
