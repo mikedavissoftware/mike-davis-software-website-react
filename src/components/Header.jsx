@@ -11,6 +11,8 @@ export default function Header() {
 
   const [active, setActive] = useState(false)
 
+  const resumeLink = "https://drive.google.com/file/d/1-5XtEzwdyILv1oZk3t8LgtjTu6eUAfrY/view?usp=sharing"
+
   const [scrollOpacity, setScrollOpacity] = useState(-500)
 
   const handleScroll = () => {
@@ -40,7 +42,7 @@ export default function Header() {
           <span className="header__logo-sub">Mike Davis</span>
         </div>
 
-        <div className="header__social-cont">
+        <div className="header__social-cont animate slide-right">
           <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mikedavissoftware">
             <img
               className="main-footer__icon"
@@ -85,11 +87,11 @@ export default function Header() {
               <a href="./#contact" className="header__link">Contact</a>
             </li>
             <li className="header__link-wrapper">
-              <a href="public/pdf/test-pdf.pdf" target="_blank" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 0", padding: "1rem 2rem", letterSpacing: "1px"}}>Resume</a>
+              <a href={resumeLink} target="_blank" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 0", padding: "1rem 2rem", letterSpacing: "1px"}}>Resume</a>
             </li>
           </ul>
           
-          <div className="header__main-ham-menu-cont">
+          <div className="header__main-ham-menu-cont animate glow">
             <img
               src={HamMenu}
               alt="hamburger menu"
@@ -134,7 +136,7 @@ export default function Header() {
             </li>
 
             <li className="header__sm-menu-link">
-              <a href="public/pdf/test-pdf.pdf" target="_blank" onClick={() => setActive(false)}>Resume</a>
+              <a href={resumeLink} target="_blank" onClick={() => setActive(false)}>Resume</a>
             </li>
           </ul>
         </div>

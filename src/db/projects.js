@@ -60,7 +60,7 @@ export const projects = {
       id: 3,
       title: "Backyard Bowls Food Truck",
       description: "This was the capstone project I did at Flatiron School, based on my good friend's food truck business (now rebranded). The front end uses React and Tailwind CSS, and the back end is built with Ruby on Rails solely as an API. There is full CRUD",
-      gifID: "1QK8OsOBAO_qyub4U-dPdx6rpIzBJ7eRz",
+      gifID: "1IusYEKDIyE0-Z0_43P7m8Oe6BKGOcZ8x",
       buttons: [
         {
           id: 1,

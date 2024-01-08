@@ -1,4 +1,3 @@
-import useState from "react"
 
 
 export default function BioLong() {
@@ -8,7 +7,7 @@ export default function BioLong() {
   return (
     <div className="about__bio">
       <p className="heading-sec__sub">
-        Ever since I was a kid, I've loved taking things apart and putting them back together, figuring out how their components build into a cohesive end product. My early interest in learning how systems later evolved into assembling my first desktop computer at age 13, and subsequently taking four years of CAD-focused mechanical engineering classes throughout high school. I later pursued a mathematics-heavy major in ecological engineering at Colorado State University for four semesters, before switching to the broader science of restoration ecology. Despite switching my major, the remainder of my undergraduate curriculum was well-supported by what I learned in my engineering courses. I graduated in 2016 with a Bachelor of Science degree in Restoration Ecology.
+        Ever since I was a kid, I've loved taking things apart and putting them back together, figuring out how their components build into a cohesive end product. My early interest in learning how systems later evolved into assembling my first desktop computer at age 13, and subsequently taking four years of CAD-focused mechanical engineering classes throughout high school. I later pursued a mathematics-heavy major in ecological engineering at Colorado State University for four semesters, in hopes of learning the skills to effectively address our many looming large-scale environmental crises. After two years in engineering courses, I switched majors to the science of restoration ecology, which was well-supported by what I learned in my engineering courses and still geared towards my passion for the environment. I graduated in 2016 with a Bachelor of Science degree in Restoration Ecology.
       </p>
       <br/>
       <p className="heading-sec__sub">
