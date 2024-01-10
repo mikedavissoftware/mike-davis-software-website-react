@@ -66,6 +66,7 @@ export const skills = [
           "Responsive Design",
           "CRUD",
           "Custom API's",
+          "Unit Testing",
           "RESTful Routing",
           "Version Control",
           "Branch Management",
