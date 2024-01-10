@@ -1,6 +1,6 @@
 import { pdfjs, Document, Page } from "react-pdf"
 
-import ResumePDF from "../../public/pdf/test-pdf.pdf"
+// import ResumePDF from "../../public/pdf/test-pdf.pdf"
 
 export default function Resume() {
 

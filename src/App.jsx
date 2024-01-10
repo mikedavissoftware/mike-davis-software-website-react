@@ -18,7 +18,7 @@ export default function App() {
 
       <Routes>
         <Route exact path="/" element={<HomePage />} />
-        <Route path="/resume" element={<Resume />} />
+        {/* <Route path="/resume" element={<Resume />} /> */}
       </Routes>
 
       <Footer />
