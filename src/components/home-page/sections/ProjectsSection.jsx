@@ -1,8 +1,8 @@
 import { useState } from "react"
 
-import ProjectCard from "./ProjectCard"
+import ProjectCard from "./projects/ProjectCard"
 
-import { projects } from "../../../../db/projects"
+import { projects } from "../../../db/projects"
 
 
 export default function ProjectsSection() {

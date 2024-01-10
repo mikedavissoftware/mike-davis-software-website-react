@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { skills } from "../../../../db/skills"
+import { skills } from "../../../db/skills"
 
-import Accordion from "./Accordion"
+import Accordion from "./skills/Accordion"
 
 
 export default function SkillsSection() {

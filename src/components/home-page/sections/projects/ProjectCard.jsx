@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
+import LoadingImage from "../../../../assets/gif/project-loading-animation.gif"
 
 export default function ProjectCard({ project, index, arrayLength }) {
 
@@ -28,6 +29,13 @@ export default function ProjectCard({ project, index, arrayLength }) {
   }, [containerRef, options])
   // Ending of viewport code
 
+  const [loadingImageClassName, setLoadingImageClassName] = useState("projects__row-img")
+  const [imageClassName, setImageClassName] = useState("d-none")
+  function showImage() {
+    setImageClassName("projects__row-img animate fade")
+    setLoadingImageClassName("d-none")
+  }
+
   const buttonComponents = project.buttons.map((button) => {
     return (
       (button.link != "") ? (
@@ -48,7 +56,14 @@ export default function ProjectCard({ project, index, arrayLength }) {
           <img
             src={`https://drive.google.com/uc?export=view&id=${project.gifID}`}
             alt="Software Screenshot"
-            className="projects__row-img animate fade"
+            className={imageClassName}
+            loading="lazy"
+            onLoad={showImage}
+          />
+          <img
+            src={LoadingImage}
+            alt="Software Screenshot"
+            className={loadingImageClassName}
             loading="lazy"
           />
         </div>
