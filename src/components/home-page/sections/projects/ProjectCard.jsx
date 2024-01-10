@@ -50,7 +50,7 @@ export default function ProjectCard({ project, index, arrayLength }) {
   })
 
   return (
-    <div className={isVisible ? ("projects__row animate slide-left delay-1") : ("d-none")} ref={containerRef}>
+    <div id={project.htmlID} className={isVisible ? ("projects__row animate slide-left delay-1") : ("d-none")} ref={containerRef}>
       <div className="projects__row-non-buttons">
         <div className="projects__row-img-cont">
           <img

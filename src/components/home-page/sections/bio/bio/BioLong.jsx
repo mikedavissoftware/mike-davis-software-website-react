@@ -19,7 +19,7 @@ export default function BioLong() {
       </p>
       <br/>
       <p className="heading-sec__sub">
-        In addition to music, I have also spearheaded numerous cross-disciplinary projects within the broader art community, utilizing my extensive network of collaborators both locally & remotely. From producing & releasing a <a href="https://youtu.be/QnNKP_V6nk4?si=BaFzXWChfa8yjkiH" target="_blank">song written specifically to a piece of visual art</a>, to heading the conceptualization & production of a <a href="https://youtu.be/YLYVKDfBAy8?si=ugd0oRHI07OwBt5O">dramatic short film</a>, to various other projects, I have established myself as prolific & adaptable collaborator.
+        In addition to music, I have also spearheaded numerous cross-disciplinary projects within the broader art community, utilizing my extensive network of collaborators both locally & remotely. From producing & releasing a <a href="https://youtu.be/QnNKP_V6nk4?si=BaFzXWChfa8yjkiH" target="_blank">song written specifically to a piece of visual art</a>, to heading the conceptualization & production of a <a href="https://youtu.be/YLYVKDfBAy8?si=ugd0oRHI07OwBt5O" target="_blank">dramatic short film</a>, to various other projects, I have established myself as prolific & adaptable collaborator.
       </p>
       <br/>
       <p className="heading-sec__sub">
