@@ -77,7 +77,7 @@
     text-shadow: 2px 2px 2px #000;
 
     @include respond(phone) {
-      padding: 50vh 0 0 0;
+      padding: 40vh 0 0 0;
       margin: auto;
       position: static;
       transform: translate(0, 0);
