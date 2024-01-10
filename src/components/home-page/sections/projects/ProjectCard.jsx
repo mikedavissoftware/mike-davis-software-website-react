@@ -61,7 +61,7 @@ export default function ProjectCard({ project, index, arrayLength }) {
             onLoad={showImage}
           />
           <img
-            src="./project-loading-animation.gif"
+            src="./gif/project-loading-animation.gif"
             alt="Software Screenshot"
             className={loadingImageClassName}
             loading="lazy"
