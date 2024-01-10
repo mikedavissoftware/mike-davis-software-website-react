@@ -7,7 +7,7 @@ import YouTubeLogoBlack from "../assets/png/black/yt-ico-black.png"
 import HamMenu from "../assets/svg/ham-menu.svg"
 import HamMenuClose from "../assets/svg/ham-menu-close.svg"
 
-import ResumeURL from "../assets/pdf/Michael Davis Software Engineering Resume.pdf"
+// import ResumeURL from "../assets/pdf/Michael Davis Software Engineering Resume.pdf"
 
 export default function Header() {
 
@@ -87,7 +87,7 @@ export default function Header() {
               <a href="./#contact" className="header__link">Contact</a>
             </li>
             <li className="header__link-wrapper">
-              <a href={ResumeURL} target="_blank" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 0", padding: "1rem 2rem", letterSpacing: "1px"}}>Resume</a>
+              <a href="./pdf/Michael Davis Software Engineering Resume.pdf" target="_blank" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 0", padding: "1rem 2rem", letterSpacing: "1px"}}>Resume</a>
             </li>
           </ul>
           
@@ -136,7 +136,7 @@ export default function Header() {
             </li>
 
             <li className="header__sm-menu-link">
-              <a href={ResumeURL} target="_blank" onClick={() => setActive(false)}>Resume</a>
+              <a href="./pdf/Michael Davis Software Engineering Resume.pdf" target="_blank" onClick={() => setActive(false)}>Resume</a>
             </li>
           </ul>
         </div>

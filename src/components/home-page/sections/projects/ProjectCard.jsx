@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
-import LoadingImage from "../../../../assets/gif/project-loading-animation.gif"
+// import LoadingImage from "../../../../assets/gif/project-loading-animation.gif"
 
 export default function ProjectCard({ project, index, arrayLength }) {
 
@@ -54,14 +54,14 @@ export default function ProjectCard({ project, index, arrayLength }) {
       <div className="projects__row-non-buttons">
         <div className="projects__row-img-cont">
           <img
-            src={`https://drive.google.com/uc?export=view&id=${project.gifID}`}
+            src={`./gif/${project.gifName}`}
             alt="Software Screenshot"
             className={imageClassName}
             loading="lazy"
             onLoad={showImage}
           />
           <img
-            src={LoadingImage}
+            src="./project-loading-animation.gif"
             alt="Software Screenshot"
             className={loadingImageClassName}
             loading="lazy"
