@@ -13,9 +13,6 @@ export default function Header() {
 
   const [active, setActive] = useState(false)
 
-  // const resumeLink = "https://drive.google.com/file/d/1-5XtEzwdyILv1oZk3t8LgtjTu6eUAfrY/view?usp=sharing"
-  // const ResumeURL = "public/pdf/Michael Davis Software Engineering Resume.pdf"
-
   const [scrollOpacity, setScrollOpacity] = useState(-500)
 
   const handleScroll = () => {
