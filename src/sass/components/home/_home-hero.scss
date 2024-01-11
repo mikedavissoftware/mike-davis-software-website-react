@@ -87,6 +87,10 @@
   &__info {
     margin: 3rem auto 0 auto;
     // max-width: 80rem;
+
+    @include respond(phone) {
+      margin: 1rem auto 0 auto;
+    }
   }
   &__cta {
     margin-top: 5rem;
@@ -97,6 +101,7 @@
       max-width: 80%;
       margin-left: auto;
       margin-right: auto;
+      margin-top: 3rem;
     }
   }
 }
