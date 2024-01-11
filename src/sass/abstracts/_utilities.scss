@@ -126,6 +126,10 @@
     background-color: $themeClrPrimary;
     padding: 1.5rem 8rem;
     font-size: 1.8rem;
+
+    @include respond(tab-port) {
+      padding: 1.3rem 4rem;
+    }
   }
   &--med {
     padding: 1.5rem 5rem;
@@ -353,4 +357,17 @@ hr.secondary {
 
 .error {
   color: $themeClrSecondary;
+}
+
+.loading {
+  height: 100vh;
+  background: url("../../../public/gif/loading-fullscr-landscape.gif") rgba(255, 255, 255, 0.7);
+  background-position: center;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background: url("../../../public/gif/loading-fullscr-portrait.gif") rgba(255, 255, 255, 0.7);
+    background-position: center;
+    background-size: cover;
+  }
 }
