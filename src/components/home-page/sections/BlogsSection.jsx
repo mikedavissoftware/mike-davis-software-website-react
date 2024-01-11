@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 
-import BlogPostCard from "./BlogPostCard"
+import BlogPostCard from "./blogs/BlogPostCard"
+import GetInTouchButton from "./GetInTouchButton"
 
 
 export default function BlogsSection() {
@@ -28,12 +29,11 @@ export default function BlogsSection() {
         <h2 className="heading heading-sec">
           <span className="heading-sec__main">Blogs</span>
         </h2>
-
         <div className="blogs__content">
           {blogPostCardComponents}
         </div>
-        
       </div>
+      <GetInTouchButton />
     </section>
   )
 }

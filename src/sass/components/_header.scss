@@ -2,8 +2,7 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #000;
-  background: #fff;
+  background: rgb(#fff, 1);
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 
   &__content {
@@ -92,7 +91,7 @@
   }
 
   &__link {
-    padding: 2.2rem 2rem;
+    padding: 2.2rem 1.5rem;
     display: inline-block;
     font-size: 1.6rem;
     color: #333;
@@ -100,6 +99,10 @@
     letter-spacing: 1px;
     font-weight: 700;
     transition: color .3s;
+
+    &-contact {
+      margin-right: 2rem;
+    }
 
     &:hover {
       color: $themeClrPrimary;

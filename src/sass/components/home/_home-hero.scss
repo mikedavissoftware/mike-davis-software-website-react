@@ -21,9 +21,18 @@
   &__socials {
     position: fixed;
     top: 50%;
-    border: 2px solid #eee;
-    border-left: 4px solid #eee;
+    border: 2px solid #d1d1d1;
+    border-left: 3px solid #d1d1d1;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     transform: translateY(-50%);
+    padding: .5rem 0;
+
+    transition-duration: 300ms;
+    &:hover {
+      background: rgba(#eeeeee,.1);
+    }
+
     @include respond(tab-port) {
       display: none;
     }
@@ -47,12 +56,15 @@
   &__social-icon-link {
     width: 100%;
     display: block;
-    padding: 1.2rem;
-    border-bottom: 2px solid #eee;
-    transition: background .3s;
+
+    padding: .5rem 1rem;
+    // border-bottom: 2px solid #eee;
+    transition: .3s;
+    // overflow: hidden;
 
     &:hover {
-      background: rgba(#fff,.1);
+      // background: rgba(#fff,.1);
+      scale: 110%;
     }
 
     &--bd-none {

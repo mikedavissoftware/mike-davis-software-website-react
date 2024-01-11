@@ -7,17 +7,16 @@ import YouTubeLogoBlack from "../assets/png/black/yt-ico-black.png"
 import HamMenu from "../assets/svg/ham-menu.svg"
 import HamMenuClose from "../assets/svg/ham-menu-close.svg"
 
-// import ResumeURL from "../assets/pdf/Michael Davis Software Engineering Resume.pdf"
 
 export default function Header() {
 
   const [active, setActive] = useState(false)
 
-  const [scrollOpacity, setScrollOpacity] = useState(-500)
+  const [scrollPosition, setScrollPosition] = useState(-500)
 
   const handleScroll = () => {
     const position = window.scrollY;
-    setScrollOpacity((position - 250) / 5); // the "- 100" is for setting the start position of the header appearance further down
+    setScrollPosition((position - 250) / 5); // the "- 100" is for setting the start position of the header appearance further down
   };
 
   useEffect(() => {
@@ -28,7 +27,8 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="header" style={(scrollOpacity >= 0) ? ({opacity: `${scrollOpacity}%`}) : ({display: "none"})}>
+    <header className="header" style={(scrollPosition >= 0) ? ({opacity: `${scrollPosition}%`}) : ({display: "none"})}>
+      {/* <h1>scroll: {scrollOpacity}</h1> */}
       <div className="header__content">
         <div className="header__logo-container animate slide-left">
           <div className="header__logo-img-cont">
@@ -84,7 +84,7 @@ export default function Header() {
               <a href="./#blogs" className="header__link">Blogs</a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./#contact" className="header__link">Contact</a>
+              <a href="./#contact" className="header__link header__link-contact">Contact</a>
             </li>
             <li className="header__link-wrapper">
               <a href="./pdf/Michael Davis Software Engineering Resume.pdf" target="_blank" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 0", padding: "1rem 2rem", letterSpacing: "1px"}}>Resume</a>

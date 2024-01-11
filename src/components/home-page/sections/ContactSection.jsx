@@ -37,7 +37,7 @@ export default function ContactSection() {
         <h2 className="heading heading-sec heading-sec__mb-med">
           <span className="heading-sec__main heading-sec__main--lt">Contact</span>
           <span className="heading-sec__sub heading-sec__sub--lt">
-            Though this website is mainly geared towards software engineering work, I am always open to discussing new projects in any of my fields of expertise (See <a href="#skills" style={{textDecoration: "underline"}}>My Skills</a>). Please use the form below to get started!
+            Though this website is mainly geared towards software engineering work, I am always open to discussing new projects in any of my <a href="#skills" style={{textDecoration: "underline"}}>fields of expertise</a>. Please use the form below to get started!
           </span>
         </h2>
 

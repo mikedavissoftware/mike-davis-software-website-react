@@ -79,6 +79,14 @@ p > a:active {
   color: $themeClrSecondary;
 }
 
+code {
+  font-family: Consolas,"courier new";
+  color: $themeClrPrimaryLight;
+  background-color: #1f1f1f;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+}
+
 @-webkit-keyframes fadeIn {
   from { opacity: 0; }
     to { opacity: 1; }

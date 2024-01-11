@@ -20,7 +20,7 @@ export default function BioShort() {
       </p>
       <br/>
       <p className="heading-sec__sub">
-        Please see <a href="#projects">My Projects</a> below for more details on my freelance software development work. As I continue to nurture my passion for software development, I look forward to contributing my technical & interpersonal skills to this ever-evolving field!
+        Please see <a href="#projects">my projects</a> for more examples of my freelance software development work. As I continue to nurture my passion for software development, I look forward to contributing my technical & interpersonal skills to this ever-evolving field!
       </p>
     </div>
   )
