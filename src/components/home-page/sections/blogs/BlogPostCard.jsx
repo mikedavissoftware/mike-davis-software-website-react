@@ -4,8 +4,6 @@ import { Link } from "react-router-dom"
 
 export default function BlogPostCard({ blog, index, arrayLength }) {
 
-  console.log(blog)
-
   // Beginning of viewport code
   const containerRef = useRef(null)
   const [ isVisible, setIsVisible ] = useState(false)
