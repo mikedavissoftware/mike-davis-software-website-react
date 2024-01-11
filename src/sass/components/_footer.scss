@@ -42,8 +42,16 @@
     margin: auto .5rem;
     vertical-align: middle;
     width: 3rem;
+    transition-duration: 300ms;
+    
+
     &--mr-none {
       margin-right: 0;
+    }
+
+    &:hover {
+      scale: 115%;
+      -webkit-filter: drop-shadow(1px 1px 4px rgb(#fff, .5));
     }
   }
 
