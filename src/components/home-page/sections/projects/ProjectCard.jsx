@@ -55,8 +55,8 @@ export default function ProjectCard({ project, index, arrayLength }) {
       <div className="projects__row-non-buttons">
         <div className="projects__row-img-cont">
           <img
-            src={`https://drive.google.com/uc?export=view&id=${project.gifID}`}
-            // src={`./gif/${project.gifName}`}
+            // src={`https://drive.google.com/uc?export=view&id=${project.gifID}`}
+            src={`./gif/${project.gifName}`}
             alt="Software Screenshot"
             className={imageClassName}
             loading="lazy"
