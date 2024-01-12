@@ -31,8 +31,9 @@ export default function SkillsSection() {
         <div className="skills__content">
           {accordionComponents}
         </div>
+        <GetInTouchButton />
       </div>
-      <GetInTouchButton />
+      
     </section>
   )
 }

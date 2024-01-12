@@ -47,6 +47,7 @@ export default function BlogPostCard({ blog, index, arrayLength }) {
           <Link 
             to={blog.url}
             className="btn btn--med btn--theme dynamicBgClr"
+            style={{textAlign: "center"}}
             target="_blank"
           >Read Blog Post</Link>
         </div>

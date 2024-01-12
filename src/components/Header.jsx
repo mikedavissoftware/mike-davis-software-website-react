@@ -30,18 +30,18 @@ export default function Header() {
     <header className="header" style={(scrollPosition >= 0) ? ({opacity: `${scrollPosition}%`}) : ({display: "none"})}>
       {/* <h1>scroll: {scrollOpacity}</h1> */}
       <div className="header__content">
-        <div className="header__logo-container animate slide-left">
-          <div className="header__logo-img-cont">
-            <img
-              src={ProfilePicture}
-              alt="Mike Davis Profile Picture"
-              className="header__logo-img"
-            />
+        <a href="#home-hero">
+          <div className="header__logo-container animate slide-left">
+            <div className="header__logo-img-cont">
+              <img
+                src={ProfilePicture}
+                alt="Mike Davis Profile Picture"
+                className="header__logo-img"
+              />
+            </div>
+            <span className="header__logo-sub">Mike Davis</span>
           </div>
-          
-          <span className="header__logo-sub">Mike Davis</span>
-        </div>
-
+        </a>
         <div className="header__social-cont animate slide-right">
           <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mikedavissoftware">
             <img

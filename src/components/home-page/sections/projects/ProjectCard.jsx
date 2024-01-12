@@ -43,6 +43,7 @@ export default function ProjectCard({ project, index, arrayLength }) {
           key={button.id}
           to={button.link}
           className="btn btn--sm btn--theme dynamicBgClr"
+          style={{textAlign: "center", verticalAlign: "middle"}}
           target="_blank"
         >{button.text}</Link>
       ) : (null)
