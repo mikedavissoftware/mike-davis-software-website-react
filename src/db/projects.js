@@ -64,7 +64,7 @@ export const projects = {
       id: 3,
       title: "Vessel Music Services",
       description: "This is a portfolio-type website for a music licensing company. I built this site using my own portfolio site (the one you're currently on) as a template.",
-      gifName: "vms-project-short-COMP.gif",
+      gifName: "vms-project-short-COMP-2.gif",
       gifID: "1uEuFfk0wv5B9nEYyvbvusIdDqUL0TftN",
       htmlID: "vessel-music-services",
       buttons: [
