@@ -50,7 +50,8 @@ export const skills = [
           "Vite",
           "Create React App",
           "VS Code",
-          "Postman"
+          "Postman",
+          "Figma"
         ]
       },
       {
@@ -62,7 +63,7 @@ export const skills = [
           "Full Stack",
           "Object Oriented Programming",
           "Web Development",
-          "Web & UI Design",
+          "UI/UX Design",
           "Responsive Design",
           "CRUD",
           "Custom API's",
@@ -85,7 +86,8 @@ export const skills = [
           "Functions & Variables",
           "Environment Variables",
           "Project File Structure",
-          "Exports & Imports"
+          "Exports & Imports",
+          "Wire-framing"
         ]
       }
     ]
