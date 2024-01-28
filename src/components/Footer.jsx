@@ -23,9 +23,7 @@ export default function Footer() {
               <br/>
               Professional Musician
               <br/>
-              Food Logistics Professional
-              <br/>
-              Barista & Chef
+              Food Service Professional
             </p>
             <div className="main-footer__social-cont">
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mikedavissoftware">
