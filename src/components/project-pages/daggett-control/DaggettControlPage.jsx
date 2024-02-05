@@ -1,4 +1,4 @@
-import Video from "../../../assets/mp4/daggett-control-hero-1080.mp4"
+// import Video from "../../../assets/mp4/daggett-control-hero-1080.mp4"
 
 
 export default function DaggettControlPage() {
@@ -8,9 +8,9 @@ export default function DaggettControlPage() {
   return (
     <div>
       <section className="project-cs-hero">
-        <video autoplay loop muted plays-inline className="project-cs-hero__video">
+        {/* <video autoplay loop muted plays-inline className="project-cs-hero__video">
           <source src={Video} type="video/mp4" />
-        </video>
+        </video> */}
         
         <div className="project-cs-hero__content">
           <h1 className="heading-primary">Daggett Control Company</h1>

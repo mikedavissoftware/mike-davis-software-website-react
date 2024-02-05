@@ -10,21 +10,26 @@ export const projects = {
       buttons: [
         {
           id: 1,
-          text: "Front End",
+          text: "Case Study",
           link: ""
         },
         {
           id: 2,
-          text: "Back End",
+          text: "Front End",
           link: ""
         },
         {
           id: 3,
+          text: "Back End",
+          link: ""
+        },
+        {
+          id: 4,
           text: "Github Repo",
           link: "https://github.com/mikedavissoftware/backyard-bowls-website"
         },
         {
-          id: 4,
+          id: 5,
           text: "Demo",
           link: ""
         }
@@ -40,21 +45,26 @@ export const projects = {
       buttons: [
         {
           id: 1,
+          text: "Case Study",
+          link: "/dcc-case-study"
+        },
+        {
+          id: 2,
           text: "Front End",
           link: "https://daggettcontrol.com/"
         },
         {
-          id: 2,
+          id: 3,
           text: "Back End",
           link: "https://daggett-control-website.onrender.com/users"
         },
         {
-          id: 3,
+          id: 4,
           text: "Github Repo",
           link: "https://github.com/mikedavissoftware/daggett-control-website"
         },
         {
-          id: 4,
+          id: 5,
           text: "Demo",
           link: ""
         }
@@ -70,21 +80,26 @@ export const projects = {
       buttons: [
         {
           id: 1,
+          text: "Case Study",
+          link: ""
+        },
+        {
+          id: 2,
           text: "Front End",
           link: "https://vesselsound.com/"
         },
         {
-          id: 2,
+          id: 3,
           text: "Back End",
           link: "https://vesselsound.com/"
         },
         {
-          id: 3,
+          id: 4,
           text: "Github Repo",
           link: "https://github.com/mikedavissoftware/vessel-music-services"
         },
         {
-          id: 4,
+          id: 5,
           text: "Demo",
           link: ""
         }
