@@ -24,7 +24,7 @@ export default function HeroSection() {
 
       <div className="home-hero__socials">
         <div className="home-hero__social">
-          <a href="https://www.linkedin.com/in/mikedavissoftware" className="home-hero__social-icon-link">
+          <a href="https://www.linkedin.com/in/mikedavissoftware" className="home-hero__social-icon-link" target="_blank">
             <img
               src={LinkedInLogoWhite}
               alt="icon"
@@ -33,7 +33,7 @@ export default function HeroSection() {
           </a>
         </div>
         <div className="home-hero__social">
-          <a href="https://github.com/mikedavissoftware" className="home-hero__social-icon-link">
+          <a href="https://github.com/mikedavissoftware" className="home-hero__social-icon-link" target="_blank">
             <img
               src={GithubLogoWhite}
               alt="icon"
@@ -42,7 +42,7 @@ export default function HeroSection() {
           </a>
         </div>
         <div className="home-hero__social">
-          <a href="https://www.youtube.com/channel/UCYzUffLPbfIJnjQgKIegclA" className="home-hero__social-icon-link">
+          <a href="https://www.youtube.com/channel/UCYzUffLPbfIJnjQgKIegclA" className="home-hero__social-icon-link" target="_blank">
             <img
               src={YouTubeLogoWhite}
               alt="icon"

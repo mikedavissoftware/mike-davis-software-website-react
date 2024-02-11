@@ -88,10 +88,9 @@ export const skills = [
           "Dynamic Rendering",
           "Data Validation",
           "Client-Side Routing",
-          "Functions & Variables",
           "Environment Variables",
-          "Project File Structure",
-          "Exports & Imports"
+          "Exports & Imports",
+          "Wireframing"
         ]
       }
     ]
