@@ -12,7 +12,9 @@ export const skills = [
           "CSS",
           "JavaScript",
           "Ruby",
-          "Python"
+          "ERB",
+          "Python",
+          "JSON"
         ]
       },
       {
@@ -63,7 +65,10 @@ export const skills = [
           "Full Stack",
           "Object Oriented Programming",
           "Web Development",
+          "CI/CD",
+          "Agile & Scrum Methodologies",
           "UI/UX Design",
+          "Wireframing",
           "Responsive Design",
           "CRUD",
           "Custom API's",
@@ -86,8 +91,7 @@ export const skills = [
           "Functions & Variables",
           "Environment Variables",
           "Project File Structure",
-          "Exports & Imports",
-          "Wire-framing"
+          "Exports & Imports"
         ]
       }
     ]
