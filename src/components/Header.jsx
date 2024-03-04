@@ -26,7 +26,7 @@ export default function Header() {
     };
   }, []);
 
-  const resumePath = "./pdf/Michael Davis - Software Engineer - Resume.pdf"
+  const resumePath = "./pdf/michael_davis_se_resume_4.pdf"
 
   return (
     <header className="header" style={(scrollPosition >= 0) ? ({opacity: `${scrollPosition}%`}) : ({display: "none"})}>
