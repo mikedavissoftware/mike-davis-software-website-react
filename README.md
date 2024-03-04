@@ -2,7 +2,7 @@
 
 ### A Single-Page Scroller Portfolio Site with All the Important Information
 
-!["Screenshot of this site"](public/gif/mds-screenshot.gif)
+!["Screenshot of this site"](public/gif/mds-software-COMP.gif)
 
 #### Inspired by [Dopefolio](https://github.com/rammcodes/Dopefolio) by [Ram Maheshwari](https://github.com/rammcodes)
 
