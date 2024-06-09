@@ -10,12 +10,13 @@
 
   @include respond(phone) {
     
-    height: 90vh;
+    height: 100vh;
     // min-height: unset;
     background: url("../assets/jpeg/hero-image-4-15pc.jpg") rgba(255, 255, 255, 0.7);
     background-position: center;
     background-size: cover;
-    background-position: calc(50% - 60px) 50%;
+    background-repeat: no-repeat;
+
   }
 
   &__socials {
@@ -89,10 +90,11 @@
     text-shadow: 2px 2px 2px #000;
 
     @include respond(phone) {
-      padding: 30vh 0 0 0;
       margin: auto;
       position: static;
+      padding: 45vh 0 0 0;
       transform: translate(0, 0);
+      vertical-align: baseline;
     }
   }
 
