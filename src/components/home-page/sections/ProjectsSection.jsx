@@ -19,7 +19,7 @@ export default function ProjectsSection() {
       <div className="main-container">
         <h2 className="heading heading-sec">
           <span className="heading-sec__main">Projects</span>
-          <p className="heading-sec__sub" style={{textAlign: "center"}}>
+          <p className="heading-sec__sub">
             Believe it or not, you've already seen one of my projects — this portfolio site! I put a lot of effort into building it as an example of my web development skills. To explore more examples of my skills, check out three of my projects below. If you'd like to see some of my contributions to the online developer community as well, <a href="./#blogs">read my blog posts</a>!
           </p>
         </h2>
