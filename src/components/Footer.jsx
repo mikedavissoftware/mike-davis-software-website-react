@@ -6,7 +6,9 @@ import YouTubeLogoWhite from "../assets/png/white/yt-ico-white.png"
 
 export default function Footer() {
 
+  const today = new Date()
 
+  const year = today.getFullYear()
 
   return (
     <footer className="main-footer">
@@ -15,15 +17,15 @@ export default function Footer() {
           <div className="main-footer__row main-footer__row-2">
             <h4 className="heading heading-sm text-lt">Mike Davis</h4>
             <p className="main-footer__short-desc">
-              Software Engineer
+              💻 Software Developer 💻
               <br/>
-              Multimedia Producer
+              🔊 Multimedia Producer 🎥
               <br/>
-              Creative Entrepreneur
+              💡 Creative Entrepreneur 🤝
               <br/>
-              Professional Musician
+              🎵 Professional Musician 🥁
               <br/>
-              Food Service Professional
+              🌯 Food Service Professional ☕
             </p>
             <div className="main-footer__social-cont">
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mikedavissoftware">
@@ -52,7 +54,7 @@ export default function Footer() {
         </div>
 
         <div className="main-footer__lower">
-          &copy; Copyright 2023.<br/>Though this website was inspired by a
+          &copy; {year} Mike Davis<br/>Though this website was inspired by a
           <a rel="noreferrer" target="_blank" href="https://github.com/rammcodes/Dopefolio">template</a> by <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>,<br/>Mike Davis heavily customized it and converted it from HTML to React.js.
         </div>
       </div>
