@@ -29,7 +29,7 @@ export default function GetInTouchButton() {
   
   return (
     <>
-      <a href="#contact" id="get-in-touch-btn" className={isVisible ? ("btn btn--med btn--theme btn--center dynamicBgClr animate glow delay-3") : ("btn btn--med btn--theme btn--center dynamicBgClr d-none")} style={{display: "block"}} ref={containerRef}>Get in Touch!</a>
+      <a href="#contact" id="get-in-touch-btn" className={isVisible ? ("btn btn--med btn--theme btn--center dynamicBgClr animate glow delay-1") : ("btn btn--med btn--theme btn--center dynamicBgClr d-none")} style={{display: "block"}} ref={containerRef}>Get in Touch!</a>
     </>
   )
 }
