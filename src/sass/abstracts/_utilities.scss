@@ -250,11 +250,12 @@
 .tgl-skewed {
 	+ .tgl-btn {
 		overflow: hidden;
-		transform: skew(-10deg);
+		// transform: skew(-10deg);
 		backface-visibility: hidden;
 		transition: all .2s ease;
 		font-family: sans-serif;
 		background: $themeClrPrimary;
+    border-radius: 10px;
 
     @include respond(phone) {
       padding: 1px 0 0 0;
@@ -263,7 +264,7 @@
 		&:after,
 
     &:before {
-			transform: skew(10deg);
+			// transform: skew(10deg);
 			display: inline-block;
 			transition: all .2s ease;
 			width: 100%;
@@ -272,7 +273,7 @@
 			line-height: 2em;
 			font-weight: bold;
 			color: #fff;
-			text-shadow: -1px 1px 0 rgba(0,0,0,.4);
+			// text-shadow: -1px 1px 0 rgba(0,0,0,.4);
 		}
     
 		&:after {
