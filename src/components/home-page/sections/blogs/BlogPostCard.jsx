@@ -30,7 +30,7 @@ export default function BlogPostCard({ blog, index, arrayLength }) {
   
   return (
     <>
-      <div className={isVisible ? ("blogs__row animate slide-left delay-1") : ("d-none")} ref={containerRef}>
+      <div className={isVisible ? ("blogs__row animate slide-right delay-1") : ("d-none")} ref={containerRef}>
         <div className="blogs__row-img-cont">
           <img
             src={blog.cover_image}
