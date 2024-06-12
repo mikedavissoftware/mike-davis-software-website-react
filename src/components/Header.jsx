@@ -16,7 +16,7 @@ export default function Header() {
 
   const handleScroll = () => {
     const position = window.scrollY;
-    setScrollPosition((position - 250) / 5); // the "- 100" is for setting the start position of the header appearance further down
+    setScrollPosition((position - 250) / 5); // the "- XXX" is for setting the start position of the header appearance further down
   };
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Header() {
     };
   }, []);
 
-  const resumePath = "./pdf/michael_davis_se_resume_4.pdf"
+  const resumePath = "./pdf/michael_davis_se_resume_7.pdf"
 
   return (
     <header className="header" style={(scrollPosition >= 0) ? ({opacity: `${scrollPosition}%`}) : ({display: "none"})}>
