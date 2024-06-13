@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react"
 
-import ProfilePicture from "../assets/jpeg/mds-prof-pic-close-square.jpg"
-import LinkedInLogoBlack from "../assets/png/black/linkedin-ico-black.png"
-import GithubLogoBlack from "../assets/png/black/github-ico-black.png"
-import YouTubeLogoBlack from "../assets/png/black/yt-ico-black.png"
-import HamMenu from "../assets/svg/ham-menu.svg"
-import HamMenuClose from "../assets/svg/ham-menu-close.svg"
+import ProfilePicture from "../../assets/jpeg/mds-prof-pic-close-square.jpg"
+import LinkedInLogoBlack from "../../assets/png/black/linkedin-ico-black.png"
+import GithubLogoBlack from "../../assets/png/black/github-ico-black.png"
+import YouTubeLogoBlack from "../../assets/png/black/yt-ico-black.png"
+import HamMenu from "../../assets/svg/ham-menu.svg"
+import HamMenuClose from "../../assets/svg/ham-menu-close.svg"
 
 
-export default function Header() {
+export default function SoftwareHeader() {
 
   const [active, setActive] = useState(false)
 
@@ -30,7 +30,6 @@ export default function Header() {
 
   return (
     <header className="header" style={(scrollPosition >= 0) ? ({opacity: `${scrollPosition}%`}) : ({display: "none"})}>
-      {/* <h1>scroll: {scrollOpacity}</h1> */}
       <div className="header__content">
         <a href="#home-hero">
           <div className="header__logo-container animate slide-left">

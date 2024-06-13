@@ -1,3 +1,4 @@
+import SoftwareHeader from "./SoftwareHeader"
 import HeroSection from "./sections/HeroSection"
 import AboutSection from "./sections/bio/BioSection"
 import SkillsSection from "./sections/SkillsSection"
@@ -12,6 +13,7 @@ export default function HomePage() {
 
   return (
     <div className="home-page">
+      <SoftwareHeader />
       <HeroSection />
       <AboutSection />
       <SkillsSection />
