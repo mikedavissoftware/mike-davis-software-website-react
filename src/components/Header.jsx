@@ -26,7 +26,7 @@ export default function Header() {
     };
   }, []);
 
-  const resumePath = "./pdf/michael_davis_se_resume_7.pdf"
+  const resumePath = "./pdf/michael_davis_se_resume_10.pdf"
 
   return (
     <header className="header" style={(scrollPosition >= 0) ? ({opacity: `${scrollPosition}%`}) : ({display: "none"})}>
@@ -89,7 +89,7 @@ export default function Header() {
               <a href="./#contact" className="header__link header__link-contact">Contact</a>
             </li>
             <li className="header__link-wrapper">
-              <a href={resumePath} target="_blank" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 0", padding: "1rem 2rem", letterSpacing: "1px"}}>Resume</a>
+              <a href={resumePath} target="_blank" rel="noreferrer noopener" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 0", padding: "1rem 2rem", letterSpacing: "1px"}}>Resume</a>
             </li>
           </ul>
           
