@@ -82,7 +82,7 @@ export default function ProjectCard({ project, index, arrayLength }) {
       </div>
       {(index < (arrayLength - 1)) ? (
         <hr className="secondary"/>
-      ) : (<></>)}
+      ) : (<hr width="50%" style={{margin: "40px auto"}}></hr>)}
     </div>
   )
 }

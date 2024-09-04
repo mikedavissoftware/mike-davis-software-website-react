@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 import BlogPostCard from "./blogs/BlogPostCard"
-import GetInTouchButton from "./GetInTouchButton"
+import GetInTouchButton from "./general/GetInTouchButton"
 
 
 export default function BlogsSection() {

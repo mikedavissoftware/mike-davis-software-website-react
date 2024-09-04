@@ -2,7 +2,7 @@ import { useState } from "react"
 import { skills } from "../../../db/skills"
 
 import Accordion from "./skills/Accordion"
-import GetInTouchButton from "./GetInTouchButton"
+import GetInTouchButton from "./general/GetInTouchButton"
 
 
 export default function SkillsSection() {
