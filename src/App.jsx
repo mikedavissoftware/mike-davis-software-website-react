@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom"
 import "./sass/main.scss"
 
 import HomePage from "./components/home-page/HomePage"
+import MediaPage from "./components/media-page/MediaPage"
 import Footer from "./components/Footer"
 
 
@@ -15,7 +16,7 @@ export default function App() {
 
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="/media" element={<></>} />
+        <Route path="/media" element={<MediaPage />} />
       </Routes>
 
       <Footer />

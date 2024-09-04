@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react"
 
-import ProfilePicture from "../assets/jpeg/mds-prof-pic-close-square.jpg"
-import LinkedInLogoBlack from "../assets/png/black/linkedin-ico-black.png"
-import GithubLogoBlack from "../assets/png/black/github-ico-black.png"
-import YouTubeLogoBlack from "../assets/png/black/yt-ico-black.png"
-import HamMenu from "../assets/svg/ham-menu.svg"
-import HamMenuClose from "../assets/svg/ham-menu-close.svg"
+import ProfilePicture from "../../assets/jpeg/mds-prof-pic-close-square.jpg"
+import LinkedInLogoBlack from "../../assets/png/black/linkedin-ico-black.png"
+import GithubLogoBlack from "../../assets/png/black/github-ico-black.png"
+import YouTubeLogoBlack from "../../assets/png/black/yt-ico-black.png"
+import HamMenu from "../../assets/svg/ham-menu.svg"
+import HamMenuClose from "../../assets/svg/ham-menu-close.svg"
 
 
-export default function HeaderTemplate() {
+export default function HeaderMedia() {
 
   const [active, setActive] = useState(false)
 
