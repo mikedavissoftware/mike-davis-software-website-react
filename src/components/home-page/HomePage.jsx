@@ -1,5 +1,5 @@
 import HeroSection from "./sections/HeroSection"
-import AboutSection from "./sections/bio/BioSection"
+import BioSection from "./sections/BioSection"
 import SkillsSection from "./sections/SkillsSection"
 import ProjectsSection from "./sections/ProjectsSection"
 import BlogsSection from "./sections/BlogsSection"
@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <div className="home-page">
       <HeroSection />
-      <AboutSection />
+      <BioSection />
       <SkillsSection />
       <ProjectsSection />
       <BlogsSection />

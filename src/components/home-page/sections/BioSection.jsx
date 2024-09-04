@@ -3,7 +3,7 @@ import { useState } from "react"
 import BioToggleButton from "./bio/BioToggleButton"
 import BioLong from "./bio/BioLong"
 import BioShort from "./bio/BioShort"
-import GetInTouchButton from "../GetInTouchButton"
+import GetInTouchButton from "./GetInTouchButton"
 
 export default function AboutSection() {
 
