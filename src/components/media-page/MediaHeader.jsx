@@ -8,7 +8,7 @@ import HamMenu from "../../assets/svg/ham-menu.svg"
 import HamMenuClose from "../../assets/svg/ham-menu-close.svg"
 
 
-export default function HeaderMedia() {
+export default function MediaHeader({ redirect }) {
 
   const [active, setActive] = useState(false)
 
@@ -29,10 +29,10 @@ export default function HeaderMedia() {
   const resumePath = "./pdf/michael_davis_se_resume_10.pdf"
 
   return (
-    <header className="header" style={(scrollPosition >= 0) ? ({opacity: `${scrollPosition}%`}) : ({display: "none"})}>
+    <header className="header" style={(scrollPosition >= 0) ? ({opacity: `${scrollPosition}%`}) : ({display: "block"})}>
       {/* <h1>scroll: {scrollOpacity}</h1> */}
       <div className="header__content">
-        <a href="#home-hero">
+        <a href="#media-hero">
           <div className="header__logo-container animate slide-left">
             <div className="header__logo-img-cont">
               <img
@@ -70,27 +70,31 @@ export default function HeaderMedia() {
 
         <div className="header__main">
           <ul className="header__links animate slide-right">
+
             <li className="header__link-wrapper">
               <a href="./#home-hero" className="header__link">Home</a>
             </li>
+
             <li className="header__link-wrapper">
               <a href="./#about" className="header__link">Bio</a>
             </li>
+
             <li className="header__link-wrapper">
               <a href="./#skills" className="header__link">Skills</a>
             </li>
+
             <li className="header__link-wrapper">
-              <a href="./#projects" className="header__link">Projects</a>
+              <a onClick={() => {redirect("/media/work")}} className="header__link">My Work</a>
             </li>
+
             <li className="header__link-wrapper">
-              <a href="./#blogs" className="header__link">Blogs</a>
+              <a href="./#contact" className="header__link header__link-last">Contact</a>
             </li>
-            <li className="header__link-wrapper">
-              <a href="./#contact" className="header__link header__link-contact">Contact</a>
-            </li>
+
             <li className="header__link-wrapper">
               <a href={resumePath} target="_blank" rel="noreferrer noopener" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 0", padding: "1rem 2rem", letterSpacing: "1px"}}>Resume</a>
             </li>
+
           </ul>
           
           <div className="header__main-ham-menu-cont animate glow">
