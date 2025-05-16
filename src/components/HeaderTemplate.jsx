@@ -26,7 +26,7 @@ export default function HeaderTemplate() {
     };
   }, []);
 
-  const resumePath = "./pdf/michael_davis_se_resume_10.pdf"
+  const resumePath = "./pdf/michael_davis_se_resume_13.pdf"
 
   return (
     <header className="header" style={(scrollPosition >= 0) ? ({opacity: `${scrollPosition}%`}) : ({display: "none"})}>
