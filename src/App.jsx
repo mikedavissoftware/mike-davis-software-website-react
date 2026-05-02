@@ -15,9 +15,7 @@ export default function App() {
     <div className="app">
 
       <Header />
-
       <HomePage />
-
       <Footer />
 
     </div>
