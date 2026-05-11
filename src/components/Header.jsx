@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 
 import ProfilePicture from "../assets/jpeg/mds-prof-pic-close-square.jpg"
 import LinkedInLogoBlack from "../assets/png/black/linkedin-ico-black.png"
@@ -7,8 +7,11 @@ import YouTubeLogoBlack from "../assets/png/black/yt-ico-black.png"
 import HamMenu from "../assets/svg/ham-menu.svg"
 import HamMenuClose from "../assets/svg/ham-menu-close.svg"
 
+import { GlobalContext } from "../App"
 
 export default function Header() {
+
+  const { showContactModal, setShowContactModal } = useContext(GlobalContext)
 
   const [active, setActive] = useState(false)
 
@@ -86,7 +89,7 @@ export default function Header() {
               <a href="./#blogs" className="header__link">Blogs</a>
             </li>
             <li className="header__link-wrapper">
-              <a href="./#contact" className="header__link header__link-contact">Contact</a>
+              <a onClick={() => setShowContactModal(!showContactModal)} rel="noreferrer noopener" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 1rem", padding: "1rem 2rem", letterSpacing: "1px", cursor: "pointer"}}>Contact</a>
             </li>
             <li className="header__link-wrapper">
               <a href={resumePath} target="_blank" rel="noreferrer noopener" className="header__link btn btn--sm btn--theme animate glow delay-3" style={{color: "white", margin: "1.1rem 0", padding: "1rem 2rem", letterSpacing: "1px"}}>Resume</a>

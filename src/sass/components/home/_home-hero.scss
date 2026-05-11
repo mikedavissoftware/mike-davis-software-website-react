@@ -109,6 +109,7 @@
   &__cta {
     margin-top: 5rem;
     text-align: right;
+    text-shadow: none;
 
     @include respond(phone) {
       text-align: center;

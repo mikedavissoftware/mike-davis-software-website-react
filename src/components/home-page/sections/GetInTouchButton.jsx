@@ -1,7 +1,10 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useContext } from "react"
 
+import { GlobalContext } from "../../../App"
 
 export default function GetInTouchButton() {
+
+    const { showContactModal, setShowContactModal } = useContext(GlobalContext)
 
     // Beginning of viewport code
     const containerRef = useRef(null)
@@ -29,7 +32,7 @@ export default function GetInTouchButton() {
   
   return (
     <>
-      <a href="#contact" id="get-in-touch-btn" className={isVisible ? ("btn btn--med btn--theme btn--center dynamicBgClr animate glow delay-1") : ("btn btn--med btn--theme btn--center dynamicBgClr d-none")} style={{display: "block"}} ref={containerRef}>Get in Touch!</a>
+      <a onClick={() => setShowContactModal(!showContactModal)} id="get-in-touch-btn" className={isVisible ? ("btn btn--med btn--theme btn--center dynamicBgClr animate glow delay-1") : ("btn btn--med btn--theme btn--center dynamicBgClr d-none")} style={{display: "block", cursor: "pointer"}} ref={containerRef}>Get in Touch!</a>
     </>
   )
 }

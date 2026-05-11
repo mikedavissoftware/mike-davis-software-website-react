@@ -49,5 +49,8 @@
 
   &__bio {
     animation: fadeIn .5s;
+    &:last-child {
+      margin-bottom: 12rem;
+    }
   }
 }
