@@ -1,14 +1,34 @@
 .contact {
-  background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+  background-color: rgba($themeClrPrimary, 0.9);
   background-size: cover;
   background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  transition: 
+    opacity 300ms ease-in-out,
+    visibility 300ms;
 
   &__form-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(#fff, 2);
+    padding: 4rem;
+    margin: 6rem auto 0 auto;
+    max-width: 80rem;
+    text-align: right;
+    width: 95%;
+    border-radius: $commonBorderRadius;
+
+    
+    @include respond(phone) {
+      margin: 4rem auto 0 auto;
+      padding: 2rem;
+    }
+  }
+    &__form-container-modal {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: rgba(#fff, 2);
     padding: 4rem;

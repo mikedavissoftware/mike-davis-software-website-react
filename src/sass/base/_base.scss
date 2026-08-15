@@ -86,8 +86,9 @@ code {
   font-family: Consolas,"courier new";
   color: $themeClrPrimaryLight;
   background-color: #1f1f1f;
-  padding: .5rem 1rem;
-  border-radius: 4px;
+  padding: .75rem 1rem;
+  margin: 2rem;
+  border-radius: 6px;
 }
 
 @-webkit-keyframes fadeIn {
