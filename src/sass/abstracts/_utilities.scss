@@ -172,6 +172,13 @@
   }
 }
 
+.sec-pad-last {
+  padding: 9rem 0 9rem 0;
+  @include respond(tab-port) {
+    padding: 6rem 0 3rem 0;
+  }
+}
+
 .text-primary {
   color: #fff;
   font-size: 2.2rem;

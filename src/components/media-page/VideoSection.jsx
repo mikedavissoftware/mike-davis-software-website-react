@@ -4,7 +4,7 @@ import BlogPostCard from "./blogs/BlogPostCard"
 import GetInTouchButton from "./general/GetInTouchButton"
 
 
-export default function BlogsSection() {
+export default function VideoSection() {
 
   const [blogsData, setBlogsData] = useState([])
 

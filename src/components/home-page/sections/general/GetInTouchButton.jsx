@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useContext } from "react"
 
-import { GlobalContext } from "../../../App"
+import { GlobalContext } from "../../../../App"
 
 export default function GetInTouchButton() {
 

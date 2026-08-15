@@ -52,7 +52,7 @@ export default function BlogPostCard({ blog, index, arrayLength }) {
           >Read Blog Post</Link>
         </div>
       </div>
-      {(index < (arrayLength - 1)) ? (<hr className="secondary"/>) : (<></>)}
+      {(index < (arrayLength - 1)) ? (<hr className="secondary"/>) : (<hr width="50%" style={{margin: "20px auto 40px auto"}}></hr>)}
     </>
   )
 }

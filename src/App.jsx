@@ -3,7 +3,7 @@ import { useState, createContext } from "react"
 
 import "./sass/main.scss"
 
-import Header from "./components/Header"
+import HeaderHome from "./components/home-page/HeaderHome"
 import HomePage from "./components/home-page/HomePage"
 import ContactModal from "./components/home-page/modals/ContactModal"
 import Footer from "./components/Footer"
@@ -18,8 +18,10 @@ export default function App() {
     <GlobalContext.Provider value={{showContactModal, setShowContactModal}} >
     <div className="app">
 
-      <Header showContactModal={showContactModal} setShowContactModal={setShowContactModal} />
-      <HomePage showContactModal={showContactModal} setShowContactModal={setShowContactModal} />
+      <HeaderHome />
+
+      <HomePage />
+
       <Footer />
 
     </div>

@@ -1,3 +1,4 @@
+import HeaderHome from "./HeaderHome"
 import HeroSection from "./sections/HeroSection"
 import BioSection from "./sections/BioSection"
 import SkillsSection from "./sections/SkillsSection"
@@ -13,6 +14,7 @@ export default function HomePage() {
   return (
     <div className="home-page">
       <ContactModal />
+      <HeaderHome />
       <HeroSection />
       <BioSection />
       <SkillsSection />

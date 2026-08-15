@@ -31,7 +31,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="contact sec-pad dynamicBg">
+    <section id="contact" className="contact sec-pad-last dynamicBg">
       <div className="main-container">
 
         <h2 className="heading heading-sec heading-sec__mb-med">

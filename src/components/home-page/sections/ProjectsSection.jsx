@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import ProjectCard from "./projects/ProjectCard"
-import GetInTouchButton from "./GetInTouchButton"
+import GetInTouchButton from "./general/GetInTouchButton"
 
 import { projects } from "../../../db/projects"
 
